@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/m5azn_app_wms.iml" filepath="$PROJECT_DIR$/m5azn_app_wms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/m5azn_app_wms_android.iml" filepath="$PROJECT_DIR$/android/m5azn_app_wms_android.iml" />
+    </modules>
+  </component>
+</project>

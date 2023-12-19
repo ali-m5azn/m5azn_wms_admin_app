@@ -1,0 +1,1 @@
+ /Users/ali/Projects/m5azn_app_wms/.dart_tool/flutter_build/d997b915f7c81a2b3c4abacfb39de3d1/native_assets.yaml: 
