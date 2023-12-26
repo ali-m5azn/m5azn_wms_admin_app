@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:m5azn_app_wms/consts/colors.dart';
-import 'package:m5azn_app_wms/views/home/dashboard/total_locations/total_locations_list_view.dart';
-import 'package:m5azn_app_wms/views/home/dashboard/total_orders/total_orders_list_view.dart';
+import 'package:m5azn_app_wms/consts/localization/language/languages.dart';
+import 'package:m5azn_app_wms/consts/navigation_service.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 final List<ChartData> chartData = [
@@ -26,65 +25,101 @@ class _DashboardViewState extends State<DashboardView> {
   Widget build(BuildContext context) {
     final List<GridItem> items = [
       GridItem(
-          'Total orders', //Empty
-
-          () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => const TotalOrdersListView()),
-              )),
+          Languages.of(context)?.totalOrders ?? '', //Empty
+          '19',
+          () => NavigationService.navigateTo(
+              '/${Languages.of(context)?.totalOrders}'),
+          icons: Icons.add_shopping_cart),
+      // GridItem(
+      //     'Top-selling products', //Empty
+      //     () => Navigator.push(
+      //         context,
+      //         MaterialPageRoute(
+      //             builder: (context) => const TopSellingProductsPage()))),
       GridItem(
-          'Top-selling products', //Empty
-          () => {}),
+          Languages.of(context)?.customerReturns ?? '', //Empty
+          '0',
+          () => NavigationService.navigateTo(
+              '/${Languages.of(context)?.returns}',
+              arguments: Languages.of(context)?.customerReturns ?? ''),
+          icons: Icons.share),
       GridItem(
-          'Customer returns', //Empty
-
-          () => {}),
+          Languages.of(context)?.totalSellers ?? '', //Empty
+          '13',
+          () => NavigationService.navigateTo(
+              '/${Languages.of(context)?.totalSellers}'),
+          icons: Icons.group),
       GridItem(
-          'Total sellers', //Empty
-
-          () => {}),
+          Languages.of(context)?.shippingOrders ?? '', //Empty
+          '0',
+          () => NavigationService.navigateTo(
+              '/${Languages.of(context)?.shippingOrders}'),
+          icons: Icons.swap_horiz),
       GridItem(
-          'Shipping orders', //Empty
-
-          () => {}),
+          Languages.of(context)?.totalInventoryCost ?? '', //Empty
+          'SAR 326.00',
+          () => {},
+          icons: Icons.attach_money_outlined),
       GridItem(
-          'Total inventory cost', //Empty
-          () => {}),
+          Languages.of(context)?.expiredProducts ?? '',
+          '0', //Empty
+          () => {},
+          icons: Icons.graphic_eq),
       GridItem(
-          'Expired products', //Empty
-          () => {}),
+          Languages.of(context)?.order24Hours ?? '', //Empty
+          '0',
+          () => {},
+          icons: Icons.timer),
       GridItem(
-          'Orders (24 hours)', //Empty
-          () => {}),
+          Languages.of(context)?.totalLocations ?? '',
+          '14',
+          () => NavigationService.navigateTo(
+              '/${Languages.of(context)?.totalLocations}'),
+          icons: Icons.map_outlined),
       GridItem(
-          'Total locations', //Empty
-          () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => const TotalLocationsListView()),
-              )),
+          Languages.of(context)?.returns ?? '', //Empty
+          '0',
+          () => NavigationService.navigateTo(
+              '/${Languages.of(context)?.returns}',
+              arguments: Languages.of(context)?.returns),
+          icons: Icons.share),
       GridItem(
-          'Returns', //Empty
-          () => {}),
+          Languages.of(context)?.order48Hours ?? '',
+          '0', //Empty
+          () => {},
+          icons: Icons.timer),
       GridItem(
-          'Orders (48 hours)', //Empty
-          () => {}),
+          Languages.of(context)?.qcOrders ?? '', //Empty
+          '0',
+          () => {},
+          icons: Icons.list),
       GridItem(
-          'QC orders', //Empty
-          () => {}),
+          Languages.of(context)?.backOrders ?? '', //Empty
+          '0',
+          () => {},
+          icons: Icons.lock_clock),
       GridItem(
-          'Total shipping companies', //Empty
-          () => {}),
+          Languages.of(context)?.todayOrders ?? '', //Empty
+          '0',
+          () => {},
+          icons: Icons.alarm),
       GridItem(
-          'Total products', //Empty
-          () => {}),
+          Languages.of(context)?.totalProducts ?? '',
+          '14',
+          () => NavigationService.navigateTo(
+              '/${Languages.of(context)?.allProducts}'),
+          icons: Icons.square),
       GridItem(
-          'Inbound', //Empty
-          () => {}),
+          Languages.of(context)?.inbound ?? '', //Empty
+          '22',
+          () => NavigationService.navigateTo(
+              '/${Languages.of(context)?.inbound}'),
+          icons: Icons.shopping_cart),
       GridItem(
-          'Near expiry products', //Empty
-          () => {}),
+          Languages.of(context)?.nearExpiryProducts ?? '', //Empty
+          '0',
+          () => {},
+          icons: Icons.punch_clock),
     ];
 
     return SingleChildScrollView(
@@ -96,7 +131,7 @@ class _DashboardViewState extends State<DashboardView> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Select Warehouse",
+                  Languages.of(context)?.selectWarehouse ?? '',
                   style: TextStyle(fontSize: 2.6.sp),
                 ),
                 SizedBox(
@@ -126,36 +161,66 @@ class _DashboardViewState extends State<DashboardView> {
               ],
             ),
             Container(
-              height: MediaQuery.of(context).size.height,
-              width: MediaQuery.of(context).size.width,
-              margin: EdgeInsets.symmetric(vertical: 7.h, horizontal: 4.w),
+              margin: EdgeInsets.symmetric(vertical: 7.h, horizontal: 1.w),
               child: GridView.builder(
+                shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
-                  crossAxisSpacing: 4.w,
-                  childAspectRatio: 2.1,
-                  mainAxisSpacing: 5.h,
+                  crossAxisSpacing: 2.5.w,
+                  childAspectRatio: 1.5,
+                  mainAxisSpacing: 3.h,
                 ),
                 itemCount: items.length,
                 itemBuilder: (context, index) {
                   return InkWell(
                     onTap: () => items[index].onTap(),
                     child: GridTile(
-                      child: Container(
-                        padding: EdgeInsets.symmetric(horizontal: 2.w),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
+                      child: Card(
+                        shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8.0),
                         ),
-                        child: Center(
-                          child: Text(
-                            items[index].title,
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 2.5.sp,
-                            ),
-                            textAlign: TextAlign.center,
+                        child: Padding(
+                          padding: const EdgeInsets.only(left: 10, right: 2),
+                          child: Row(
+                            children: [
+                              Icon(
+                                items[index].icons,
+                                size: 4.5.w,
+                              ),
+                              Expanded(
+                                child: Container(
+                                  padding:
+                                      const EdgeInsets.symmetric(horizontal: 8),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        items[index].title,
+                                        style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 2.6.sp,
+                                        ),
+                                        textAlign: TextAlign.start,
+                                      ),
+                                      const SizedBox(
+                                        height: 5,
+                                      ),
+                                      Text(
+                                        items[index].subtitle,
+                                        style: TextStyle(
+                                            color: Colors.black,
+                                            fontSize: 2.5.sp,
+                                            fontWeight: FontWeight.bold),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ),
@@ -174,7 +239,7 @@ class _DashboardViewState extends State<DashboardView> {
               series: <ChartSeries>[
                 BarSeries<ChartData, String>(
                   width: 0.05.w,
-                  color: const Color(secondaryColor),
+                  // color: const Color(secondaryColor),
                   dataSource: chartData,
                   xValueMapper: (ChartData sales, _) => sales.title,
                   yValueMapper: (ChartData sales, _) =>
@@ -185,7 +250,9 @@ class _DashboardViewState extends State<DashboardView> {
             _charDetailCard(title: "RTO", value: "59.36", percentage: "25"),
             _charDetailCard(title: "RVP", value: "3,65.5", percentage: "25"),
             _charDetailCard(
-                title: "Inbound", value: "3,65.5", percentage: "25"),
+                title: Languages.of(context)?.inbound ?? '',
+                value: "3,65.5",
+                percentage: "25"),
           ],
         ),
       ),
@@ -225,9 +292,11 @@ Widget _charDetailCard(
 
 class GridItem {
   final String title;
+  final IconData? icons;
+  final String subtitle;
   final GestureTapCallback onTap;
 
-  GridItem(this.title, this.onTap);
+  GridItem(this.title, this.subtitle, this.onTap, {this.icons});
 }
 
 class ChartData {

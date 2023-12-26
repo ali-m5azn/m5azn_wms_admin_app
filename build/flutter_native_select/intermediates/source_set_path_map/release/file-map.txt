@@ -1,0 +1,12 @@
+app.mietz.flutter_native_select-jetified-window-1.0.0-beta04-0 /Users/jaykadam/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/res
+app.mietz.flutter_native_select-jetified-annotation-experimental-1.1.0-1 /Users/jaykadam/.gradle/caches/transforms-3/6c0c163cc77ae6c91f9f7dfcd179c29c/transformed/jetified-annotation-experimental-1.1.0/res
+app.mietz.flutter_native_select-core-1.6.0-2 /Users/jaykadam/.gradle/caches/transforms-3/7e9df2ac2213a6bd3cef0f2f27870d79/transformed/core-1.6.0/res
+app.mietz.flutter_native_select-jetified-window-java-1.0.0-beta04-3 /Users/jaykadam/.gradle/caches/transforms-3/ae81e06d24c799147c26814497a2a305/transformed/jetified-window-java-1.0.0-beta04/res
+app.mietz.flutter_native_select-main-4 /Users/jaykadam/.pub-cache/hosted/pub.dev/flutter_native_select-1.0.1/android/src/main/res
+app.mietz.flutter_native_select-release-5 /Users/jaykadam/.pub-cache/hosted/pub.dev/flutter_native_select-1.0.1/android/src/release/res
+app.mietz.flutter_native_select-pngs-6 /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/flutter_native_select/generated/res/pngs/release
+app.mietz.flutter_native_select-resValues-7 /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/flutter_native_select/generated/res/resValues/release
+app.mietz.flutter_native_select-rs-8 /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/flutter_native_select/generated/res/rs/release
+app.mietz.flutter_native_select-mergeReleaseResources-9 /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/flutter_native_select/intermediates/incremental/release/mergeReleaseResources/merged.dir
+app.mietz.flutter_native_select-mergeReleaseResources-10 /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/flutter_native_select/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+app.mietz.flutter_native_select-merged_res-11 /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/flutter_native_select/intermediates/merged_res/release

@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rOGd5EvwswIwtvdrNLV0as0MP8k=
+		8dfmixDW7BSO/CfFa1JM99XrUDU=
 		</data>
 		<key>Modules/flutter_native_select.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		CtkXLNimLGdmhiCHEw3Tb/eXsJI=
+		0EUHGzMQDlVB7nwMjMC5C1HgzPA=
 		</data>
 		<key>Modules/flutter_native_select.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		/db4j8YXyubMyk+tKje4YoRfwnA=
+		a5sGyIZ92AXRDcCMc2DwUeX4RxM=
 		</data>
 		<key>Modules/flutter_native_select.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/flutter_native_select.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lx1wwFpfp7JPlksNTgOIZTr4KqQ=
+		y8bHV0XjouVhGg3vJdsNBxRrwm4=
 		</data>
 		<key>Modules/flutter_native_select.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/flutter_native_select.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wXo137uYWrStAdzHsneIFz05B+s=
+		yJZB6pecjYMkZkgqGwjPEDW7kF4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -84,14 +84,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			831yegs+oelLuEv9aTLBnTgxTF2F//fEkupXfNEzonI=
+			1IjISjGv59EcUgCzNZW8S7XP9Fab13r7C2/YviZc9Xw=
 			</data>
 		</dict>
 		<key>Modules/flutter_native_select.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8cAVntW+WqziTTG9sRZhoqHft3EyhGHt07T3F7F4GEQ=
+			yEwTFJ58j7C4cVYVUab+T/G1KdaOSVExXwQaVqUCxb8=
 			</data>
 		</dict>
 		<key>Modules/flutter_native_select.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -112,7 +112,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pwfNOfFpkVeOlfBr+sYrbnzBvqnJ+9QCSFAtWLLCowQ=
+			QkX9hOqZ7l1bXupwLIp1OkYSrpwuPrAG62hVyv3gEuE=
 			</data>
 		</dict>
 		<key>Modules/flutter_native_select.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tyNzEAff11yRlCca08qvhXV9qzofBZG951G6sQ5y4tw=
+			ou/H9I6G5o9SS2bW6HQqrVBzFp+lVJF1hUGtlDo0n0E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -1,5 +1,5 @@
-import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CustomTxtField extends StatelessWidget {
@@ -24,11 +24,14 @@ class CustomTxtField extends StatelessWidget {
   final bool? isHidden;
   final Function? onTap;
 
+  final String? Function(String?)? validateInput;
+
   const CustomTxtField(
       {Key? key,
       this.suffix,
       this.onChange,
       this.height,
+      this.validateInput,
       this.inputFormatters,
       this.onFieldSubmit,
       this.keyboardType,
@@ -83,6 +86,7 @@ class CustomTxtField extends StatelessWidget {
               onFieldSubmit == null ? null : (val) => onFieldSubmit!(val),
           // maxLength: maxLength,
           maxLines: maxLines,
+          validator: validateInput,
           decoration: InputDecoration(
             filled: true,
             fillColor: Colors.white.withOpacity(0.7),

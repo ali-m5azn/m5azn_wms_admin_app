@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "app.mietz.flutter_native_select-merged_res-10:/layout/notification_template_part_chronometer.xml",
+        "source": "app.mietz.flutter_native_select-core-1.6.0-2:/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "app.mietz.flutter_native_select-merged_res-10:/layout/notification_action.xml",
+        "source": "app.mietz.flutter_native_select-core-1.6.0-2:/layout/notification_action.xml"
+    },
+    {
+        "merged": "app.mietz.flutter_native_select-merged_res-10:/layout/notification_template_icon_group.xml",
+        "source": "app.mietz.flutter_native_select-core-1.6.0-2:/layout/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "app.mietz.flutter_native_select-merged_res-10:/layout/custom_dialog.xml",
+        "source": "app.mietz.flutter_native_select-core-1.6.0-2:/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "app.mietz.flutter_native_select-merged_res-10:/layout/notification_template_part_time.xml",
+        "source": "app.mietz.flutter_native_select-core-1.6.0-2:/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "app.mietz.flutter_native_select-merged_res-10:/layout/notification_action_tombstone.xml",
+        "source": "app.mietz.flutter_native_select-core-1.6.0-2:/layout/notification_action_tombstone.xml"
+    }
+]

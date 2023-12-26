@@ -1,9 +1,11 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:m5azn_app_wms/consts/assets.dart';
 import 'package:m5azn_app_wms/consts/colors.dart';
-import 'package:m5azn_app_wms/views/auth/login_view.dart';
+import 'package:m5azn_app_wms/consts/local_storage.dart';
+import 'package:m5azn_app_wms/views/auth/screens/login_view.dart';
+import 'package:m5azn_app_wms/views/home/main_view.dart';
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter/material.dart';
 
 class SplashView extends StatefulWidget {
   static const String routeName = '/splash_view';
@@ -23,26 +25,29 @@ class SplashViewState extends State<SplashView> {
     _init();
   }
 
-  @override
-  void dispose() {
-    super.dispose();
-  }
-
   Future<void> _init() async {
     await setAppVersion();
     await Future.delayed(const Duration(seconds: 3));
-    if (context.mounted) {
-      //Navigate to login
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => const LoginView()),
-      );
-    }
+    final email = LocalStorage.readStorage(LocalStorage.email);
+    print('this is >> $email');
+    _navigateToNextScreen(email);
   }
 
   setAppVersion() async {
     PackageInfo packageInfo = await PackageInfo.fromPlatform();
     appVersion = packageInfo.version;
+  }
+
+  void _navigateToNextScreen(String? email) {
+    final Widget nextScreen = email != null && email.isNotEmpty
+        ? const MainView()
+        : const LoginView();
+
+    Navigator.pushAndRemoveUntil(
+      context,
+      MaterialPageRoute(builder: (context) => nextScreen),
+      (route) => false,
+    );
   }
 
   @override
@@ -61,7 +66,9 @@ class SplashViewState extends State<SplashView> {
               Text(
                 "Version: $appVersion",
                 style: const TextStyle(
-                    fontWeight: FontWeight.bold, color: Colors.white),
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
               ),
           ],
         ),

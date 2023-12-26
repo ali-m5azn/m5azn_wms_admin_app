@@ -1,0 +1,4 @@
+#Mon Dec 25 17:33:11 IST 2023
+base.0=/Users/jaykadam/Desktop/m5azn_wms_admin_app/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

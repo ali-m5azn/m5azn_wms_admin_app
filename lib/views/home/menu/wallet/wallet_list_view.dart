@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:m5azn_app_wms/consts/localization/language/languages.dart';
+import 'package:m5azn_app_wms/consts/navigation_service.dart';
 import 'package:m5azn_app_wms/views/base_views/custom_app_bar.dart';
-import 'package:m5azn_app_wms/views/home/dashboard/total_orders/order_detail_view.dart';
-import 'package:m5azn_app_wms/views/home/menu/wallet/wallet_detail_view.dart';
 import 'package:m5azn_app_wms/views/widgets/screen_title.dart';
 
 class WalletListView extends StatelessWidget {
@@ -17,7 +17,7 @@ class WalletListView extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const ScreenTitle(title: "All Wallets"),
+            ScreenTitle(title: Languages.of(context)?.allWallets ?? ''),
             Flexible(
               child: ListView.builder(
                 itemCount: 10,
@@ -61,11 +61,8 @@ class WalletListView extends StatelessWidget {
                   fontWeight: FontWeight.w500),
             ),
             InkWell(
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => const WalletDetailView()),
-              ),
+              onTap: () => NavigationService.navigateTo(
+                  '/${Languages.of(context)?.walletDetail}'),
               child: Container(
                 margin: EdgeInsets.symmetric(horizontal: 1.8.w),
                 width: 6.w,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:m5azn_app_wms/consts/colors.dart';
+import 'package:m5azn_app_wms/consts/localization/language/languages.dart';
 import 'package:m5azn_app_wms/views/base_views/custom_app_bar.dart';
 
 class NotificationsView extends StatelessWidget {
@@ -16,9 +16,9 @@ class NotificationsView extends StatelessWidget {
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 3.0.w, vertical: 5.0.h),
             child: Text(
-              "Notification", //Empty
+              Languages.of(context)?.notifications ?? '', //Empty
               style: TextStyle(
-                color: const Color(secondaryColor),
+                // color: const Color(secondaryColor),
                 fontSize: 4.0.sp,
                 fontWeight: FontWeight.bold,
               ),
@@ -51,9 +51,10 @@ class NotificationsView extends StatelessWidget {
                 Text(
                   "Name",
                   style: TextStyle(
-                      fontSize: 2.5.sp,
-                      fontWeight: FontWeight.bold,
-                      color: const Color(secondaryColor)),
+                    fontSize: 2.5.sp,
+                    fontWeight: FontWeight.bold,
+                    //color: const Color(secondaryColor)
+                  ),
                 ),
                 Text(
                   "10/09/2023",

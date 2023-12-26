@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:m5azn_app_wms/consts/colors.dart';
-import 'package:m5azn_app_wms/main.dart';
+import 'package:m5azn_app_wms/consts/navigation_service.dart';
 import 'package:m5azn_app_wms/views/home/notifications_view.dart';
 import 'package:m5azn_app_wms/views/home/recharge_wallet_view.dart';
 
@@ -23,8 +23,8 @@ PreferredSizeWidget customAppBar(
       IconButton(
         icon: Icon(
           FontAwesomeIcons.solidBell,
-          color:
-              isNotificationScreen ? const Color(secondaryColor) : Colors.black,
+          // color:
+          //     isNotificationScreen ? const Color(secondaryColor) : Colors.black,
           size: 5.0.sp,
         ),
         onPressed: isNotificationScreen
@@ -44,8 +44,8 @@ Widget _buildWalletIcon(
     IconButton(
       icon: Icon(
         FontAwesomeIcons.wallet,
-        color:
-            isRechargeWalletScreen ? const Color(secondaryColor) : Colors.black,
+        // color:
+        //     isRechargeWalletScreen ? const Color(secondaryColor) : Colors.black,
         size: 5.0.sp,
       ),
       onPressed: isRechargeWalletScreen
@@ -58,7 +58,8 @@ Widget _buildWalletIcon(
     );
 
 Widget _buildBackButton() => InkWell(
-      onTap: () => Navigator.pop(navigate.currentContext!),
+      onTap: () =>
+          Navigator.pop(NavigationService.navigatorKey.currentContext!),
       child: Container(
         margin: EdgeInsets.symmetric(horizontal: 1.8.w),
         width: 6.w,

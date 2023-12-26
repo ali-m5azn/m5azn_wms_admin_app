@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "app.mietz.flutter_native_select-merged_res-10:/drawable/notification_tile_bg.xml",
+        "source": "app.mietz.flutter_native_select-core-1.6.0-2:/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "app.mietz.flutter_native_select-merged_res-10:/drawable/notification_bg.xml",
+        "source": "app.mietz.flutter_native_select-core-1.6.0-2:/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "app.mietz.flutter_native_select-merged_res-10:/drawable/notification_bg_low.xml",
+        "source": "app.mietz.flutter_native_select-core-1.6.0-2:/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "app.mietz.flutter_native_select-merged_res-10:/drawable/notification_icon_background.xml",
+        "source": "app.mietz.flutter_native_select-core-1.6.0-2:/drawable/notification_icon_background.xml"
+    }
+]
