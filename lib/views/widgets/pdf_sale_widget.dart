@@ -1,7 +1,6 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:m5azn_app_wms/consts/localization/language/languages.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/total_orders/model/sale_item_model.dart';
 import 'package:open_file/open_file.dart';
 import 'package:path_provider/path_provider.dart';
@@ -29,7 +28,7 @@ Future generateOrderPDF(BuildContext context) async {
               color: PdfColor.fromHex('#ADD8E6'), // Light blue color
               padding: const pw.EdgeInsets.all(10),
               child: pw.Text(
-                Languages.of(context)?.invoice ?? '',
+                'Invoice',
                 style: pw.TextStyle(
                   fontSize: 20,
                   fontWeight: pw.FontWeight.bold,

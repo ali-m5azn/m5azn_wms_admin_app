@@ -240,6 +240,4 @@ abstract class Languages {
   String get order48Hours;
 
   String get logout;
-
-  String get invoice;
 }
