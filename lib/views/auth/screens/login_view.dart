@@ -53,8 +53,10 @@ class _LoginViewState extends ConsumerState<LoginView> {
                         height: 5.0.h,
                       ),
                       CustomTxtField(
-                        fieldTitle: Languages.of(context)?.email ?? '', //Empty
-                        hint: Languages.of(context)?.emailHint ?? '', //Empty
+                        fieldTitle: Languages.of(context)?.email ?? '',
+                        //Empty
+                        hint: Languages.of(context)?.emailHint ?? '',
+                        //Empty
                         keyboardType: TextInputType.emailAddress,
                         txtController: emailController,
                         validateInput: (value) => value!.isEmpty

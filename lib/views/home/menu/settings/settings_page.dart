@@ -21,7 +21,9 @@ class _SettingsPageState extends State<SettingsPage> {
         margin: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           children: [
-            ScreenTitle(title: Languages.of(context)?.settings ?? ''),
+            ScreenTitle(
+                title: Languages.of(context)?.settings ?? '',
+                showTrailingOptions: false),
             Expanded(
               child: ListView.builder(
                   shrinkWrap: true,
@@ -77,16 +79,52 @@ class SettingItemModel {
 }
 
 List<SettingItemModel> settingsItemList = [
-  SettingItemModel(title: "Warehouse", icons: Icons.warehouse),
-  SettingItemModel(title: "Locations", icons: Icons.location_on),
-  SettingItemModel(title: "Picking Path", icons: Icons.add_road),
-  SettingItemModel(title: "Cities", icons: Icons.location_city),
-  SettingItemModel(title: "3pl Management", icons: Icons.ac_unit),
-  SettingItemModel(title: "Allocation Rules", icons: Icons.rule),
-  SettingItemModel(title: "KPL Management", icons: Icons.attach_money),
-  SettingItemModel(title: "Packing Material", icons: Icons.book),
-  SettingItemModel(title: "Sms Settings", icons: Icons.sms_rounded),
-  SettingItemModel(title: "sms Templates", icons: Icons.sms_sharp),
-  SettingItemModel(title: "Mail Settings", icons: Icons.mail),
-  SettingItemModel(title: "Email Templates", icons: Icons.email_outlined),
+  SettingItemModel(
+      title: Languages.of(NavigationService.navigatorKey.currentContext!)
+          ?.warehouse,
+      icons: Icons.warehouse),
+  SettingItemModel(
+      title: Languages.of(NavigationService.navigatorKey.currentContext!)
+          ?.locations,
+      icons: Icons.location_on),
+  SettingItemModel(
+      title: Languages.of(NavigationService.navigatorKey.currentContext!)
+          ?.pickingPath,
+      icons: Icons.add_road),
+  SettingItemModel(
+      title:
+          Languages.of(NavigationService.navigatorKey.currentContext!)?.cities,
+      icons: Icons.location_city),
+  SettingItemModel(
+      title: Languages.of(NavigationService.navigatorKey.currentContext!)
+          ?.threePLManage,
+      icons: Icons.ac_unit),
+  SettingItemModel(
+      title: Languages.of(NavigationService.navigatorKey.currentContext!)
+          ?.allocationRules,
+      icons: Icons.rule),
+  SettingItemModel(
+      title: Languages.of(NavigationService.navigatorKey.currentContext!)
+          ?.kplManage,
+      icons: Icons.attach_money),
+  SettingItemModel(
+      title: Languages.of(NavigationService.navigatorKey.currentContext!)
+          ?.pickingMaterial,
+      icons: Icons.book),
+  SettingItemModel(
+      title: Languages.of(NavigationService.navigatorKey.currentContext!)
+          ?.smsSettings,
+      icons: Icons.sms_rounded),
+  SettingItemModel(
+      title: Languages.of(NavigationService.navigatorKey.currentContext!)
+          ?.smsTemplate,
+      icons: Icons.sms_sharp),
+  SettingItemModel(
+      title: Languages.of(NavigationService.navigatorKey.currentContext!)
+          ?.mailSettings,
+      icons: Icons.mail),
+  SettingItemModel(
+      title: Languages.of(NavigationService.navigatorKey.currentContext!)
+          ?.mailTemplate,
+      icons: Icons.email_outlined),
 ];

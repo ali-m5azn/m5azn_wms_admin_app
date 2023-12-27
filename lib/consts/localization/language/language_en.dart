@@ -355,4 +355,43 @@ class AppLocalizationsEn extends Languages {
 
   @override
   String get logout => 'Logout';
+
+  @override
+  String get firstName => 'First Name';
+
+  @override
+  String get lastName => 'Last Name';
+
+  @override
+  String get allocationRules => 'Allocation Rules';
+
+  @override
+  String get cities => 'Cities';
+
+  @override
+  String get kplManage => 'KPL Management';
+
+  @override
+  String get locations => 'Locations';
+
+  @override
+  String get mailSettings => 'Mail Settings';
+
+  @override
+  String get mailTemplate => 'Email Templates';
+
+  @override
+  String get pickingMaterial => 'Packing Material';
+
+  @override
+  String get pickingPath => 'Picking Path';
+
+  @override
+  String get smsSettings => 'Sms Settings';
+
+  @override
+  String get smsTemplate => 'sms Templates';
+
+  @override
+  String get threePLManage => '3pl Management';
 }

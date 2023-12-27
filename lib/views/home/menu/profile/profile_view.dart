@@ -25,6 +25,9 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
   TextEditingController emailCon = TextEditingController();
   TextEditingController passCon = TextEditingController();
   TextEditingController userCon = TextEditingController();
+  TextEditingController firstCon = TextEditingController();
+  TextEditingController lastCon = TextEditingController();
+  TextEditingController phoneCon = TextEditingController();
 
   Future<void> _getImage(ImageSource source) async {
     final pickedFile = await ImagePicker().pickImage(source: source);
@@ -101,20 +104,20 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
               ),
               CustomTxtField(
                 borderRadius: 1.5.w,
-                fieldTitle: 'First Name',
+                fieldTitle: Languages.of(context)?.firstName,
                 textInputAction: TextInputAction.next,
-                txtController: TextEditingController(),
-                hint: 'First Name',
+                txtController: firstCon,
+                hint: Languages.of(context)?.firstName,
               ),
               SizedBox(
                 height: 2.h,
               ),
               CustomTxtField(
                 borderRadius: 1.5.w,
-                fieldTitle: 'Last Name',
+                fieldTitle: Languages.of(context)?.lastName,
                 textInputAction: TextInputAction.next,
-                txtController: TextEditingController(),
-                hint: 'Last Name',
+                txtController: lastCon,
+                hint: Languages.of(context)?.lastName,
               ),
               SizedBox(
                 height: 2.h,
@@ -133,7 +136,7 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
                 borderRadius: 1.5.w,
                 fieldTitle: Languages.of(context)?.phoneNumber ?? '',
                 textInputAction: TextInputAction.next,
-                txtController: TextEditingController(),
+                txtController: phoneCon,
                 hint: Languages.of(context)?.phoneNumber ?? '',
               ),
               SizedBox(
@@ -167,7 +170,10 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
                     width: 30.w,
                     onPressed: () {},
                     text: Languages.of(context)?.updateProfile ?? ''),
-              )
+              ),
+              SizedBox(
+                height: 3.h,
+              ),
             ],
           ),
         ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:intl/intl.dart';
 import 'package:m5azn_app_wms/consts/colors.dart';
 import 'package:m5azn_app_wms/consts/localization/language/languages.dart';
 import 'package:m5azn_app_wms/views/base_views/custom_app_bar.dart';
@@ -60,7 +61,10 @@ class _FilterPageState extends State<FilterPage> {
         padding: EdgeInsets.symmetric(horizontal: 3.2.w),
         child: ListView(
           children: [
-            ScreenTitle(title: Languages.of(context)?.filter ?? ""),
+            ScreenTitle(
+              title: Languages.of(context)?.filter ?? "",
+              showTrailingOptions: false,
+            ),
             if (widget.title != Languages.of(context)?.allProducts)
               _buildTextField(
                 labelText: Languages.of(context)?.date ?? "",
@@ -293,7 +297,8 @@ class _FilterPageState extends State<FilterPage> {
 
     if (picked != null && picked.toString() != _dateController.text) {
       setState(() {
-        _dateController.text = picked.toString(); // Format as needed
+        _dateController.text =
+            DateFormat('dd/MM/yyyy').format(picked); // Format as needed
       });
     }
   }

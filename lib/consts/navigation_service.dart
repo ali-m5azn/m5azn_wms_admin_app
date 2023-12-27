@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:m5azn_app_wms/consts/localization/language/languages.dart';
-import 'package:m5azn_app_wms/subscription_page.dart';
 import 'package:m5azn_app_wms/views/auth/screens/forgot_password_view.dart';
 import 'package:m5azn_app_wms/views/auth/screens/login_view.dart';
 import 'package:m5azn_app_wms/views/auth/screens/reset_password_view.dart';
+import 'package:m5azn_app_wms/views/home/dashboard/back_orders/screens/back_order_detail_page.dart';
+import 'package:m5azn_app_wms/views/home/dashboard/back_orders/screens/back_orders_list.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/inbound/screens/inbound_list_page.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/inbound/screens/inbound_page.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/returns/screens/returns_page.dart';
-import 'package:m5azn_app_wms/views/home/dashboard/shipping_orders_page/shipping_orders_page.dart';
+import 'package:m5azn_app_wms/views/home/dashboard/shipping_orders_page/screens/shipping_orders_page.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/total_locations/screens/location_detail_view.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/total_locations/screens/total_locations_list_view.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/total_orders/screens/order_detail_view.dart';
@@ -23,6 +24,7 @@ import 'package:m5azn_app_wms/views/home/menu/feature_enable_warning_page.dart';
 import 'package:m5azn_app_wms/views/home/menu/profile/profile_view.dart';
 import 'package:m5azn_app_wms/views/home/menu/reporting/reporting_view.dart';
 import 'package:m5azn_app_wms/views/home/menu/settings/settings_page.dart';
+import 'package:m5azn_app_wms/views/home/menu/subscription/subscription_page.dart';
 import 'package:m5azn_app_wms/views/home/menu/wallet/wallet_detail_view.dart';
 import 'package:m5azn_app_wms/views/home/menu/wallet/wallet_list_view.dart';
 import 'package:m5azn_app_wms/views/home/notifications_view.dart';
@@ -124,6 +126,10 @@ Route? generateRoute(RouteSettings settings) {
   } else if (settings.name ==
       '/${Languages.of(currentContext)?.notifications}') {
     return MaterialPageRoute(builder: (context) => const NotificationsView());
+  } else if (settings.name == '/${Languages.of(currentContext)?.backOrders}') {
+    return MaterialPageRoute(builder: (context) => const BackOrdersPage());
+  } else if (settings.name == '/backOrderDetail') {
+    return MaterialPageRoute(builder: (context) => const BackOrderDetailPage());
   } else if (settings.name ==
       '/${Languages.of(currentContext)?.rechargeWallet}') {
     return MaterialPageRoute(builder: (context) => const RechargeWalletView());

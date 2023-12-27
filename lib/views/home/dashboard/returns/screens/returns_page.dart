@@ -8,6 +8,7 @@ import 'package:m5azn_app_wms/views/widgets/screen_title.dart';
 
 class ReturnsPage extends StatefulWidget {
   final String title;
+
   const ReturnsPage({super.key, required this.title});
 
   @override
@@ -45,10 +46,10 @@ class _ReturnsPageState extends State<ReturnsPage> {
       margin: EdgeInsets.symmetric(vertical: 1.0.h),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.0),
-        // border: Border.all(
-        //   color: Colors.black,
-        //   width: 0.2.w,
-        // ),
+        border: Border.all(
+          color: Colors.black,
+          width: 0.2.w,
+        ),
       ),
       child: ListTile(
         title: Text(

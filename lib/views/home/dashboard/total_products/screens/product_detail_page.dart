@@ -35,7 +35,9 @@ class ProductDetailsPage extends StatelessWidget {
         margin: EdgeInsets.symmetric(horizontal: 3.2.w),
         child: Column(
           children: [
-            ScreenTitle(title: Languages.of(context)?.productDetail ?? ''),
+            ScreenTitle(
+                title: Languages.of(context)?.productDetail ?? '',
+                showTrailingOptions: false),
             _buildDetailRowImg('${Languages.of(context)?.image}:', Icons.image),
             const Divider(),
             _buildDetailRow('${Languages.of(context)?.type}:', 'Single'),

@@ -11,6 +11,7 @@ class LocaleProvider extends ChangeNotifier {
   Locale get locale =>
       _getlocale(LocalStorage.readStorage(LocalStorage.lanCode) ??
           AppLanguagesEnum.en.key);
+
   String get languageCode =>
       LocalStorage.readStorage(LocalStorage.lanCode) ?? AppLanguagesEnum.en.key;
 

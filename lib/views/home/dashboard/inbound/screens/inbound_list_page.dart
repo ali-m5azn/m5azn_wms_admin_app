@@ -42,10 +42,10 @@ class _InboundListPageState extends State<InboundListPage> {
       margin: EdgeInsets.symmetric(vertical: 1.0.h),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.0),
-        // border: Border.all(
-        //   color: Colors.black,
-        //   width: 0.2.w,
-        // ),
+        border: Border.all(
+          color: Colors.black,
+          width: 0.2.w,
+        ),
       ),
       child: ListTile(
         onTap: () {

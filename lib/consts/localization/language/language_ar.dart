@@ -356,4 +356,43 @@ class AppLocalizationsAr extends Languages {
 
   @override
   String get logout => 'تسجيل خروج';
+
+  @override
+  String get firstName => 'الاسم الأول';
+
+  @override
+  String get lastName => 'اسم العائلة';
+
+  @override
+  String get allocationRules => 'قواعد التخصيص';
+
+  @override
+  String get cities => 'مدن';
+
+  @override
+  String get kplManage => 'إدارة كي بي إل';
+
+  @override
+  String get locations => 'المواقع';
+
+  @override
+  String get mailSettings => 'إعدادات البريد';
+
+  @override
+  String get mailTemplate => 'قوالب البريد الإلكتروني';
+
+  @override
+  String get pickingMaterial => 'مواد التعبئة والتغليف';
+
+  @override
+  String get pickingPath => 'مسار الاختيار';
+
+  @override
+  String get smsSettings => 'إعدادات الرسائل القصيرة';
+
+  @override
+  String get smsTemplate => 'قوالب الرسائل القصيرة';
+
+  @override
+  String get threePLManage => 'إدارة 3pl';
 }

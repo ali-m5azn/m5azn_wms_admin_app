@@ -96,7 +96,8 @@ class _DashboardViewState extends State<DashboardView> {
       GridItem(
           Languages.of(context)?.backOrders ?? '', //Empty
           '0',
-          () => {},
+          () => NavigationService.navigateTo(
+              '/${Languages.of(context)?.backOrders}'),
           icons: Icons.lock_clock),
       GridItem(
           Languages.of(context)?.todayOrders ?? '', //Empty

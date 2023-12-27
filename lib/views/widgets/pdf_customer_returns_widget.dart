@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:m5azn_app_wms/consts/colors.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/returns/model/customer_return_model.dart';
 import 'package:open_filex/open_filex.dart';
 import 'package:path_provider/path_provider.dart';
@@ -24,10 +25,10 @@ Future generateCustomerReturnPDF() async {
           children: [
             // Add header with light blue color
             pw.Container(
-              color: PdfColor.fromHex('#ADD8E6'), // Light blue color
+              color: PdfColor.fromHex(lightHexColor), // Light blue color
               padding: const pw.EdgeInsets.all(10),
               child: pw.Text(
-                'Invoice',
+                'Customer Returns List',
                 style: pw.TextStyle(
                   fontSize: 20,
                   fontWeight: pw.FontWeight.bold,

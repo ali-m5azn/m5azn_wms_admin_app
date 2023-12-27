@@ -240,4 +240,30 @@ abstract class Languages {
   String get order48Hours;
 
   String get logout;
+
+  String get firstName;
+
+  String get lastName;
+
+  String get locations;
+
+  String get pickingPath;
+
+  String get cities;
+
+  String get threePLManage;
+
+  String get allocationRules;
+
+  String get kplManage;
+
+  String get pickingMaterial;
+
+  String get smsSettings;
+
+  String get smsTemplate;
+
+  String get mailSettings;
+
+  String get mailTemplate;
 }
