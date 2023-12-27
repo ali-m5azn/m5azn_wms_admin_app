@@ -3,9 +3,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:m5azn_app_wms/consts/localization/language/languages.dart';
 import 'package:m5azn_app_wms/consts/navigation_service.dart';
 import 'package:m5azn_app_wms/views/base_views/custom_app_bar.dart';
-import 'package:m5azn_app_wms/views/widgets/excel_product_widget.dart';
+import 'package:m5azn_app_wms/views/widgets/excel_seller_widget.dart';
 import 'package:m5azn_app_wms/views/widgets/pdf_product_widget.dart';
 import 'package:m5azn_app_wms/views/widgets/screen_title.dart';
+
+import '../model/product_item_model.dart';
 
 class AllProductsPage extends StatefulWidget {
   const AllProductsPage({super.key});
@@ -26,7 +28,8 @@ class _AllProductsPageState extends State<AllProductsPage> {
           children: [
             ScreenTitle(
                 title: Languages.of(context)?.allProducts ?? '',
-                excelCallback: () => generateProductExcel(),
+                excelCallback: () => generateSellerExcel(
+                    productLabel, productItemList, 'product_invoice.xlsx'),
                 pdfClickCallback: () => generateProductPdf()),
             Flexible(
               child: ListView.builder(

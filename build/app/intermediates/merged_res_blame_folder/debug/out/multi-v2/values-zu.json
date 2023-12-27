@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.m5azn_app_wms.app-mergeDebugResources-21:/values-zu/values-zu.xml",
+            "outputFile": "com.example.m5azn_app_wms.app-mergeDebugResources-23:/values-zu/values-zu.xml",
             "map": [
                 {
                     "source": "/Users/jaykadam/.gradle/caches/transforms-3/d12883dde0390e08dd2a1192741cec1b/transformed/browser-1.5.0/res/values-zu/values-zu.xml",

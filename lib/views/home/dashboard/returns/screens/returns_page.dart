@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:m5azn_app_wms/views/base_views/custom_app_bar.dart';
+import 'package:m5azn_app_wms/views/home/dashboard/returns/model/customer_return_model.dart';
+import 'package:m5azn_app_wms/views/widgets/excel_seller_widget.dart';
+import 'package:m5azn_app_wms/views/widgets/pdf_customer_returns_widget.dart';
 import 'package:m5azn_app_wms/views/widgets/screen_title.dart';
 
 class ReturnsPage extends StatefulWidget {
@@ -22,8 +25,9 @@ class _ReturnsPageState extends State<ReturnsPage> {
           children: [
             ScreenTitle(
                 title: widget.title,
-                pdfClickCallback: () {},
-                excelCallback: () {}),
+                pdfClickCallback: () => generateCustomerReturnPDF(),
+                excelCallback: () => generateSellerExcel(customerReturnLabel,
+                    customerReturnList, 'customer_return_invoice.xlsx')),
             Flexible(
               child: ListView.builder(
                 itemCount: 10,

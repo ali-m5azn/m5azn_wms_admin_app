@@ -18,7 +18,7 @@ class OrderDetailView extends StatelessWidget {
           children: [
             ScreenTitle(
               title: Languages.of(context)?.orderDetail ?? '',
-              showFilters: false,
+              showTrailingOptions: false,
             ),
             _orderDetailRow(
                 title: Languages.of(context)?.date ?? '', data: "2023-11-04"),

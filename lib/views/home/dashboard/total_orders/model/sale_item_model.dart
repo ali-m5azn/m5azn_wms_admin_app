@@ -51,6 +51,19 @@ class SaleItemModel {
   }
 }
 
+List<String> saleLabelItem = [
+  'Ref',
+  'Client',
+  'Warehouse',
+  'Created By',
+  'Status',
+  'Total',
+  'Paid',
+  'Due',
+  'Status Payment',
+  'Shipping Status'
+];
+
 List<SaleItemModel> saleItemList = [
   SaleItemModel(
       client: '',

@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:m5azn_app_wms/views/home/dashboard/total_products/model/product_item_model.dart';
-import 'package:open_file/open_file.dart';
+import 'package:open_filex/open_filex.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
@@ -45,7 +45,7 @@ generateProductPdf() async {
   await file.writeAsBytes(await pdf.save());
 
   // Open the PDF using open_file package
-  await OpenFile.open(file.path);
+  await OpenFilex.open(file.path);
 }
 
 // Helper function to build the table
@@ -56,20 +56,9 @@ pw.Widget buildTableProduct() {
   ]);
 }
 
-List<String> labelItems = [
-  'type',
-  'name',
-  'code',
-  'category',
-  'cost',
-  'price',
-  'unit',
-  'quantity',
-];
-
 pw.Widget _buildTableHeader() {
   return pw.Row(
-    children: labelItems.asMap().entries.map((entry) {
+    children: productLabel.asMap().entries.map((entry) {
       final int index = entry.key;
       final String label = entry.value;
       final double width = contentColumnWidths[index];

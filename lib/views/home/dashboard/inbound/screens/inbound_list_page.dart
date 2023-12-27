@@ -23,7 +23,6 @@ class _InboundListPageState extends State<InboundListPage> {
           children: [
             ScreenTitle(
               title: Languages.of(context)?.inbound ?? '',
-              showFilters: false,
               showTrailingOptions: false,
             ),
             Flexible(

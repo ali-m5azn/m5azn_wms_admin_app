@@ -139,11 +139,26 @@ class _DashboardViewState extends State<DashboardView> {
                 ),
                 DropdownButtonFormField<String>(
                   isExpanded: true,
-                  value: _selectedWarehouse,
+                  value:
+                      _selectedWarehouse.isNotEmpty ? _selectedWarehouse : null,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(1.2.sp)),
                     ),
+                  ),
+                  hint: Text(Languages.of(context)?.selectWarehouse ?? ''),
+                  icon: Row(
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            _selectedWarehouse = '';
+                          });
+                        },
+                        child: Icon(Icons.clear),
+                      ),
+                      Icon(Icons.arrow_drop_down)
+                    ],
                   ),
                   onChanged: (String? newValue) {
                     setState(() {

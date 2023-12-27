@@ -30,7 +30,6 @@ class InboundPage extends StatelessWidget {
           children: [
             ScreenTitle(
               title: Languages.of(context)?.inbound ?? '',
-              showFilters: false,
               showTrailingOptions: false,
             ),
             _buildInfoRow('${Languages.of(context)?.date}:', '2023-11-04'),

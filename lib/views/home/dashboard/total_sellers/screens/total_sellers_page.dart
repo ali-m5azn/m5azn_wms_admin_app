@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:m5azn_app_wms/consts/localization/language/languages.dart';
 import 'package:m5azn_app_wms/views/base_views/custom_app_bar.dart';
+import 'package:m5azn_app_wms/views/home/dashboard/total_sellers/model/total_seller_model.dart';
+import 'package:m5azn_app_wms/views/widgets/excel_seller_widget.dart';
+import 'package:m5azn_app_wms/views/widgets/pdf_seller_widget.dart';
 import 'package:m5azn_app_wms/views/widgets/screen_title.dart';
 
 class TotalSellersPage extends StatelessWidget {
@@ -40,7 +43,12 @@ class TotalSellersPage extends StatelessWidget {
         margin: EdgeInsets.symmetric(horizontal: 3.2.w),
         child: Column(
           children: [
-            ScreenTitle(title: Languages.of(context)?.totalSellers ?? ''),
+            ScreenTitle(
+              title: Languages.of(context)?.totalSellers ?? '',
+              excelCallback: () => generateSellerExcel(
+                  sellerLabel, totalSellerList, 'seller_invoice.xlsx'),
+              pdfClickCallback: () => generateSellerPDF(),
+            ),
             _buildDetailRow('Shopname:', 'Zyros'),
             const Divider(),
             _buildDetailRow('Cr Name:', 'Abddfsid'),
@@ -51,7 +59,8 @@ class TotalSellersPage extends StatelessWidget {
             const Divider(),
             _buildDetailRow('accountManger:', 'علي'),
             const Divider(),
-            _buildDetailRow('Phone:', '05973625425'),
+            _buildDetailRow(
+                '${Languages.of(context)?.phoneNumber}:', '05973625425'),
             const Divider(),
             _buildDetailRow(
                 '${Languages.of(context)?.email}:', 'sgsdgt@gmaile.com'),

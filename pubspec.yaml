@@ -43,7 +43,6 @@ dependencies:
   get_storage: ^2.1.1
   another_flushbar: ^1.12.30
   flutter_riverpod: ^2.4.9
-  syncfusion_flutter_pdfviewer:
   syncfusion_flutter_xlsio:
   path_provider:
   in_app_purchase: ^3.1.11
@@ -51,7 +50,7 @@ dependencies:
   url_launcher: ^6.2.2
   syncfusion_flutter_charts: ^22.2.8
   image_picker: ^1.0.4
-  open_file: ^3.3.2
+  open_filex:
   pdf: ^3.10.7
 
 dev_dependencies:

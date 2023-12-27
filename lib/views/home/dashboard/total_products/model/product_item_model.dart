@@ -19,6 +19,17 @@ class ProductItemModel {
       this.quantity});
 }
 
+List<String> productLabel = [
+  'type',
+  'name',
+  'code',
+  'category',
+  'cost',
+  'price',
+  'unit',
+  'quantity',
+];
+
 List<ProductItemModel> productItemList = [
   ProductItemModel(
       price: '40.0',

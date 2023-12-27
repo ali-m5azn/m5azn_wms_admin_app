@@ -1,15 +1,14 @@
 import 'dart:io';
 
-import 'package:flutter/material.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/total_orders/model/sale_item_model.dart';
-import 'package:open_file/open_file.dart';
+import 'package:open_filex/open_filex.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
 
 // Helper function to build the table
 
-Future generateOrderPDF(BuildContext context) async {
+Future generateOrderPDF() async {
   final pdf = pw.Document();
 
   // Add a page to the PDF
@@ -49,11 +48,12 @@ Future generateOrderPDF(BuildContext context) async {
   await file.writeAsBytes(await pdf.save());
 
   // Open the PDF using open_file package
-  await OpenFile.open(file.path);
+  await OpenFilex.open(file.path);
 }
 
 Future<String> getFilePath() async {
   final directory = await getApplicationDocumentsDirectory();
+  print('this is >> $directory');
   return '${directory.path}/order_invoice.pdf';
 }
 
@@ -64,22 +64,9 @@ pw.Widget buildTableSale() {
   ]);
 }
 
-List<String> labelItems = [
-  'Ref',
-  'Client',
-  'Warehouse',
-  'Created By',
-  'Status',
-  'Total',
-  'Paid',
-  'Due',
-  'Status Payment',
-  'Shipping Status'
-];
-
 pw.Widget _buildTableHeader() {
   return pw.Row(
-    children: labelItems.asMap().entries.map((entry) {
+    children: saleLabelItem.asMap().entries.map((entry) {
       final int index = entry.key;
       final String label = entry.value;
       final double width = contentColumnWidths[index];

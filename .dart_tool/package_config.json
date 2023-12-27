@@ -80,18 +80,6 @@
       "languageVersion": "2.19"
     },
     {
-      "name": "device_info_plus",
-      "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/device_info_plus-9.1.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.18"
-    },
-    {
-      "name": "device_info_plus_platform_interface",
-      "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/device_info_plus_platform_interface-7.0.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "fake_async",
       "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/fake_async-1.3.1",
       "packageUri": "lib/",
@@ -100,12 +88,6 @@
     {
       "name": "ffi",
       "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/ffi-2.1.0",
-      "packageUri": "lib/",
-      "languageVersion": "3.0"
-    },
-    {
-      "name": "file",
-      "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/file-7.0.0",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -344,8 +326,8 @@
       "languageVersion": "2.18"
     },
     {
-      "name": "open_file",
-      "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/open_file-3.3.2",
+      "name": "open_filex",
+      "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/open_filex-4.3.4",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -500,24 +482,6 @@
       "languageVersion": "2.17"
     },
     {
-      "name": "syncfusion_flutter_pdf",
-      "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/syncfusion_flutter_pdf-22.2.12",
-      "packageUri": "lib/",
-      "languageVersion": "2.17"
-    },
-    {
-      "name": "syncfusion_flutter_pdfviewer",
-      "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/syncfusion_flutter_pdfviewer-22.2.12",
-      "packageUri": "lib/",
-      "languageVersion": "2.17"
-    },
-    {
-      "name": "syncfusion_flutter_signaturepad",
-      "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/syncfusion_flutter_signaturepad-22.2.12",
-      "packageUri": "lib/",
-      "languageVersion": "2.17"
-    },
-    {
       "name": "syncfusion_flutter_xlsio",
       "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/syncfusion_flutter_xlsio-22.2.12",
       "packageUri": "lib/",
@@ -526,30 +490,6 @@
     {
       "name": "syncfusion_officecore",
       "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/syncfusion_officecore-22.2.12",
-      "packageUri": "lib/",
-      "languageVersion": "2.17"
-    },
-    {
-      "name": "syncfusion_pdfviewer_macos",
-      "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/syncfusion_pdfviewer_macos-22.2.12",
-      "packageUri": "lib/",
-      "languageVersion": "2.17"
-    },
-    {
-      "name": "syncfusion_pdfviewer_platform_interface",
-      "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/syncfusion_pdfviewer_platform_interface-22.2.12",
-      "packageUri": "lib/",
-      "languageVersion": "2.17"
-    },
-    {
-      "name": "syncfusion_pdfviewer_web",
-      "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/syncfusion_pdfviewer_web-22.2.12",
-      "packageUri": "lib/",
-      "languageVersion": "2.17"
-    },
-    {
-      "name": "syncfusion_pdfviewer_windows",
-      "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/syncfusion_pdfviewer_windows-22.2.12",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -620,12 +560,6 @@
       "languageVersion": "3.0"
     },
     {
-      "name": "uuid",
-      "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/uuid-3.0.7",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "vector_math",
       "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/vector_math-2.1.4",
       "packageUri": "lib/",
@@ -640,12 +574,6 @@
     {
       "name": "win32",
       "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/win32-5.1.0",
-      "packageUri": "lib/",
-      "languageVersion": "3.1"
-    },
-    {
-      "name": "win32_registry",
-      "rootUri": "file:///Users/jaykadam/.pub-cache/hosted/pub.dev/win32_registry-1.1.2",
       "packageUri": "lib/",
       "languageVersion": "3.1"
     },
@@ -668,7 +596,7 @@
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2023-12-26T06:27:53.777739Z",
+  "generated": "2023-12-27T08:51:38.374657Z",
   "generator": "pub",
   "generatorVersion": "3.1.0"
 }

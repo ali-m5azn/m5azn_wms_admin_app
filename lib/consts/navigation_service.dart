@@ -6,7 +6,7 @@ import 'package:m5azn_app_wms/views/auth/screens/login_view.dart';
 import 'package:m5azn_app_wms/views/auth/screens/reset_password_view.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/inbound/screens/inbound_list_page.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/inbound/screens/inbound_page.dart';
-import 'package:m5azn_app_wms/views/home/dashboard/returns/returns_page.dart';
+import 'package:m5azn_app_wms/views/home/dashboard/returns/screens/returns_page.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/shipping_orders_page/shipping_orders_page.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/total_locations/screens/location_detail_view.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/total_locations/screens/total_locations_list_view.dart';
@@ -14,7 +14,8 @@ import 'package:m5azn_app_wms/views/home/dashboard/total_orders/screens/order_de
 import 'package:m5azn_app_wms/views/home/dashboard/total_orders/screens/total_orders_list_view.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/total_products/screens/all_products_page.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/total_products/screens/product_detail_page.dart';
-import 'package:m5azn_app_wms/views/home/dashboard/total_sellers/total_sellers_page.dart';
+import 'package:m5azn_app_wms/views/home/dashboard/total_sellers/screens/total_sellers_list_page.dart';
+import 'package:m5azn_app_wms/views/home/dashboard/total_sellers/screens/total_sellers_page.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/total_selling_products/top_selling_products_page.dart';
 import 'package:m5azn_app_wms/views/home/filter_page.dart';
 import 'package:m5azn_app_wms/views/home/main_view.dart';
@@ -107,6 +108,9 @@ Route? generateRoute(RouteSettings settings) {
     return MaterialPageRoute(builder: (context) => const ProductDetailsPage());
   } else if (settings.name ==
       '/${Languages.of(currentContext)?.totalSellers}') {
+    return MaterialPageRoute(
+        builder: (context) => const TotalSellersListPage());
+  } else if (settings.name == '/sellerDetails') {
     return MaterialPageRoute(builder: (context) => const TotalSellersPage());
   } else if (settings.name ==
       '/${Languages.of(currentContext)?.topSellingProducts}') {

@@ -3,7 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:m5azn_app_wms/consts/localization/language/languages.dart';
 import 'package:m5azn_app_wms/consts/navigation_service.dart';
 import 'package:m5azn_app_wms/views/base_views/custom_app_bar.dart';
-import 'package:m5azn_app_wms/views/widgets/excel_sale_widget.dart';
+import 'package:m5azn_app_wms/views/home/dashboard/total_orders/model/sale_item_model.dart';
+import 'package:m5azn_app_wms/views/widgets/excel_seller_widget.dart';
 import 'package:m5azn_app_wms/views/widgets/pdf_sale_widget.dart';
 import 'package:m5azn_app_wms/views/widgets/screen_title.dart';
 
@@ -26,8 +27,9 @@ class _TotalOrdersListViewState extends State<TotalOrdersListView> {
           children: [
             ScreenTitle(
                 title: Languages.of(context)?.totalOrders ?? '',
-                pdfClickCallback: () => generateOrderPDF(context),
-                excelCallback: () => generateOrderExcel()),
+                pdfClickCallback: () => generateOrderPDF(),
+                excelCallback: () => generateSellerExcel(
+                    saleLabelItem, saleItemList, 'sale_invoice.xlsx')),
             Flexible(
               child: ListView.builder(
                 itemCount: 10,
