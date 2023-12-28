@@ -17,6 +17,29 @@ class ProductItemModel {
       this.price,
       this.unit,
       this.quantity});
+
+  String? getField(String fieldName) {
+    switch (fieldName) {
+      case 'type':
+        return type;
+      case 'name':
+        return name;
+      case 'code':
+        return code;
+      case 'category':
+        return category;
+      case 'Status':
+        return cost;
+      case 'Total':
+        return price;
+      case 'Paid':
+        return unit;
+      case 'Due':
+        return quantity;
+      default:
+        return null;
+    }
+  }
 }
 
 List<String> productLabel = [

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:m5azn_app_wms/consts/localization/language/languages.dart';
 import 'package:m5azn_app_wms/views/base_views/custom_app_bar.dart';
+import 'package:m5azn_app_wms/views/widgets/pdf_shipping_orders_widget.dart';
 import 'package:m5azn_app_wms/views/widgets/screen_title.dart';
 
 class ShippingOrdersPage extends StatelessWidget {
@@ -18,6 +19,7 @@ class ShippingOrdersPage extends StatelessWidget {
             ScreenTitle(
               title: Languages.of(context)?.shippingOrders ?? '',
               showFilters: false,
+              pdfClickCallback: () => generateShippingPDF(),
             ),
             _buildRowItem(Languages.of(context)?.date ?? ''),
             const Divider(),

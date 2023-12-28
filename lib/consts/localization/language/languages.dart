@@ -266,4 +266,6 @@ abstract class Languages {
   String get mailSettings;
 
   String get mailTemplate;
+
+  String get sellers;
 }

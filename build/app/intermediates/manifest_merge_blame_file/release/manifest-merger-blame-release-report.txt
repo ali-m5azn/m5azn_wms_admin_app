@@ -5,273 +5,277 @@
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="19"
+8        android:minSdkVersion="21"
 8-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="33" />
 9-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml
 10
-11    <permission
-11-->[androidx.core:core:1.10.1] /Users/jaykadam/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
-12        android:name="com.example.m5azn_app_wms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.10.1] /Users/jaykadam/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
-13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.10.1] /Users/jaykadam/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
-14
-15    <uses-permission android:name="com.example.m5azn_app_wms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.10.1] /Users/jaykadam/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.10.1] /Users/jaykadam/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
-16    <uses-permission android:name="com.android.vending.BILLING" />
-16-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:10:5-67
-16-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:10:22-64
-17
-18    <queries>
-18-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:12:5-16:15
-19        <intent>
-19-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:13:9-15:18
-20            <action android:name="com.android.vending.billing.InAppBillingService.BIND" />
-20-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:14:13-91
-20-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:14:21-88
-21        </intent>
-22    </queries> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-23    <!-- <uses-sdk android:minSdkVersion="14"/> -->
-24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-24-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/a5f1ff8179a51cad08637ffc69855391/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:24:5-79
-24-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/a5f1ff8179a51cad08637ffc69855391/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:24:22-76
-25    <uses-permission android:name="android.permission.INTERNET" />
-25-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/a5f1ff8179a51cad08637ffc69855391/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:25:5-67
-25-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/a5f1ff8179a51cad08637ffc69855391/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:25:22-64
-26
-27    <application
-28        android:name="android.app.Application"
-28-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:4:9-42
-29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.10.1] /Users/jaykadam/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
-30        android:icon="@mipmap/ic_launcher"
-30-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:5:9-43
-31        android:label="m5azn_app_wms" >
-31-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:3:9-38
-32        <activity
-32-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:6:9-26:20
-33            android:name="com.example.m5azn_app_wms.MainActivity"
-33-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:7:13-41
-34            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-34-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:11:13-163
-35            android:exported="true"
-35-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:8:13-36
-36            android:hardwareAccelerated="true"
-36-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:12:13-47
-37            android:launchMode="singleTop"
-37-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:9:13-43
-38            android:theme="@style/LaunchTheme"
-38-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:10:13-47
-39            android:windowSoftInputMode="adjustResize" >
-39-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:13:13-55
-40
-41            <!--
-42                 Specifies an Android theme to apply to this Activity as soon as
-43                 the Android process has started. This theme is visible to the user
-44                 while the Flutter UI initializes. After that, this theme continues
-45                 to determine the Window background behind the Flutter UI.
-46            -->
-47            <meta-data
-47-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:18:13-21:17
-48                android:name="io.flutter.embedding.android.NormalTheme"
-48-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:19:15-70
-49                android:resource="@style/NormalTheme" />
-49-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:20:15-52
-50
-51            <intent-filter>
-51-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:22:13-25:29
-52                <action android:name="android.intent.action.MAIN" />
-52-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:23:17-68
-52-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:23:25-66
-53
-54                <category android:name="android.intent.category.LAUNCHER" />
-54-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:24:17-76
-54-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:24:27-74
-55            </intent-filter>
-56        </activity>
-57        <!--
-58             Don't delete the meta-data below.
-59             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-60        -->
-61        <meta-data
-61-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:29:9-31:33
-62            android:name="flutterEmbedding"
-62-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:30:13-44
-63            android:value="2" />
-63-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:31:13-30
-64
-65        <provider
-65-->[:image_picker_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
-66            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-66-->[:image_picker_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-82
-67            android:authorities="com.example.m5azn_app_wms.flutter.image_provider"
-67-->[:image_picker_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-74
-68            android:exported="false"
-68-->[:image_picker_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
-69            android:grantUriPermissions="true" >
-69-->[:image_picker_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
-70            <meta-data
-70-->[:image_picker_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:75
-71                android:name="android.support.FILE_PROVIDER_PATHS"
-71-->[:image_picker_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-67
-72                android:resource="@xml/flutter_image_picker_file_paths" />
-72-->[:image_picker_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-72
-73        </provider>
-74        <provider
-74-->[:open_file] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:11:9-20:20
-75            android:name="com.crazecoder.openfile.FileProvider"
-75-->[:open_file] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-64
-76            android:authorities="com.example.m5azn_app_wms.fileProvider.com.crazecoder.openfile"
-76-->[:open_file] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-88
-77            android:exported="false"
-77-->[:open_file] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-37
-78            android:grantUriPermissions="true" >
-78-->[:open_file] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_file/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-47
-79            <meta-data
-79-->[:image_picker_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:75
-80                android:name="android.support.FILE_PROVIDER_PATHS"
-80-->[:image_picker_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-67
-81                android:resource="@xml/filepaths" />
-81-->[:image_picker_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-72
-82        </provider>
-83
-84        <activity
-84-->[:url_launcher_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-13:74
-85            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-85-->[:url_launcher_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-74
-86            android:exported="false"
-86-->[:url_launcher_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-37
-87            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-87-->[:url_launcher_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-71
-88
-89        <provider
-89-->[androidx.emoji2:emoji2:1.2.0] /Users/jaykadam/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-90            android:name="androidx.startup.InitializationProvider"
-90-->[androidx.emoji2:emoji2:1.2.0] /Users/jaykadam/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
-91            android:authorities="com.example.m5azn_app_wms.androidx-startup"
-91-->[androidx.emoji2:emoji2:1.2.0] /Users/jaykadam/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
-92            android:exported="false" >
-92-->[androidx.emoji2:emoji2:1.2.0] /Users/jaykadam/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
-93            <meta-data
-93-->[androidx.emoji2:emoji2:1.2.0] /Users/jaykadam/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-94                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-94-->[androidx.emoji2:emoji2:1.2.0] /Users/jaykadam/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
-95                android:value="androidx.startup" />
-95-->[androidx.emoji2:emoji2:1.2.0] /Users/jaykadam/.gradle/caches/transforms-3/e04bc3769bedd8dd6f8ca688986b0355/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
-96            <meta-data
-96-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/jaykadam/.gradle/caches/transforms-3/34e3313412f6bb2343705c93422b49a8/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
-97                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-97-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/jaykadam/.gradle/caches/transforms-3/34e3313412f6bb2343705c93422b49a8/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
-98                android:value="androidx.startup" />
-98-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/jaykadam/.gradle/caches/transforms-3/34e3313412f6bb2343705c93422b49a8/transformed/jetified-lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
-99            <meta-data
-99-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-100                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-100-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-101                android:value="androidx.startup" />
-101-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-102        </provider>
-103
-104        <uses-library
-104-->[androidx.window:window:1.0.0-beta04] /Users/jaykadam/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
-105            android:name="androidx.window.extensions"
-105-->[androidx.window:window:1.0.0-beta04] /Users/jaykadam/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
-106            android:required="false" />
-106-->[androidx.window:window:1.0.0-beta04] /Users/jaykadam/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
-107        <uses-library
-107-->[androidx.window:window:1.0.0-beta04] /Users/jaykadam/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
-108            android:name="androidx.window.sidecar"
-108-->[androidx.window:window:1.0.0-beta04] /Users/jaykadam/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
-109            android:required="false" />
-109-->[androidx.window:window:1.0.0-beta04] /Users/jaykadam/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
-110
-111        <receiver
-111-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-112            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-112-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
-113            android:directBootAware="false"
-113-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
-114            android:enabled="true"
-114-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-115            android:exported="true"
-115-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
-116            android:permission="android.permission.DUMP" >
-116-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
-117            <intent-filter>
-117-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
-118                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-118-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-118-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
-119            </intent-filter>
-120            <intent-filter>
-120-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
-121                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-121-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-121-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
-122            </intent-filter>
-123            <intent-filter>
-123-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
-124                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-124-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-124-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
-125            </intent-filter>
-126            <intent-filter>
-126-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
-127                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-127-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-127-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
-128            </intent-filter>
-129        </receiver>
-130
-131        <meta-data
-131-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:19:9-21:37
-132            android:name="com.google.android.play.billingclient.version"
-132-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:20:13-73
-133            android:value="6.0.1" />
-133-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:21:13-34
-134
-135        <activity
-135-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:23:9-27:75
-136            android:name="com.android.billingclient.api.ProxyBillingActivity"
-136-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:24:13-78
-137            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-137-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:25:13-96
-138            android:exported="false"
-138-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:26:13-37
-139            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-139-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:27:13-72
-140
-141        <service
-141-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/a5f1ff8179a51cad08637ffc69855391/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
-142            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-142-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/a5f1ff8179a51cad08637ffc69855391/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
-143            android:exported="false" >
-143-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/a5f1ff8179a51cad08637ffc69855391/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
-144            <meta-data
-144-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/a5f1ff8179a51cad08637ffc69855391/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
-145                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-145-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/a5f1ff8179a51cad08637ffc69855391/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
-146                android:value="cct" />
-146-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/a5f1ff8179a51cad08637ffc69855391/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
-147        </service>
-148        <service
-148-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/6e5a1cbd6e3d2c42bcc7c2731873333e/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
-149            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-149-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/6e5a1cbd6e3d2c42bcc7c2731873333e/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
-150            android:exported="false"
-150-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/6e5a1cbd6e3d2c42bcc7c2731873333e/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
-151            android:permission="android.permission.BIND_JOB_SERVICE" >
-151-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/6e5a1cbd6e3d2c42bcc7c2731873333e/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
-152        </service>
-153
-154        <receiver
-154-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/6e5a1cbd6e3d2c42bcc7c2731873333e/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
-155            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-155-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/6e5a1cbd6e3d2c42bcc7c2731873333e/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
-156            android:exported="false" />
-156-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/6e5a1cbd6e3d2c42bcc7c2731873333e/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
-157    </application>
-158
-159</manifest>
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:3:5-66
+11-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:3:22-64
+12    <uses-permission
+12-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-12:38
+13        android:name="android.permission.READ_EXTERNAL_STORAGE"
+13-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:11:9-64
+14        android:maxSdkVersion="32" />
+14-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-35
+15    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+15-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:13:5-76
+15-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:13:22-73
+16    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+16-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:14:5-75
+16-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:14:22-72
+17    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+17-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:15:5-75
+17-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:15:22-72
+18
+19    <permission
+19-->[androidx.core:core:1.10.1] /Users/jaykadam/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+20        android:name="com.example.m5azn_app_wms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+20-->[androidx.core:core:1.10.1] /Users/jaykadam/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+21        android:protectionLevel="signature" />
+21-->[androidx.core:core:1.10.1] /Users/jaykadam/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+22
+23    <uses-permission android:name="com.example.m5azn_app_wms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+23-->[androidx.core:core:1.10.1] /Users/jaykadam/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+23-->[androidx.core:core:1.10.1] /Users/jaykadam/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+24    <uses-permission android:name="com.android.vending.BILLING" />
+24-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:10:5-67
+24-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:10:22-64
+25
+26    <queries>
+26-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:12:5-16:15
+27        <intent>
+27-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:13:9-15:18
+28            <action android:name="com.android.vending.billing.InAppBillingService.BIND" />
+28-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:14:13-91
+28-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:14:21-88
+29        </intent>
+30    </queries> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+31    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+32    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+32-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/a5f1ff8179a51cad08637ffc69855391/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:24:5-79
+32-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/a5f1ff8179a51cad08637ffc69855391/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:24:22-76
+33
+34    <application
+35        android:name="android.app.Application"
+35-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:6:9-42
+36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+36-->[androidx.core:core:1.10.1] /Users/jaykadam/.gradle/caches/transforms-3/c4988ff80110f75080a936fc6f044848/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+37        android:icon="@mipmap/ic_launcher"
+37-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:7:9-43
+38        android:label="m5azn_app_wms" >
+38-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:5:9-38
+39        <activity
+39-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:8:9-29:20
+40            android:name="com.example.m5azn_app_wms.MainActivity"
+40-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:9:13-41
+41            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+41-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:13:13-163
+42            android:exported="true"
+42-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:10:13-36
+43            android:hardwareAccelerated="true"
+43-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:14:13-47
+44            android:launchMode="singleTop"
+44-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:11:13-43
+45            android:theme="@style/LaunchTheme"
+45-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:12:13-47
+46            android:windowSoftInputMode="adjustResize" >
+46-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:15:13-55
+47
+48            <!--
+49                 Specifies an Android theme to apply to this Activity as soon as
+50                 the Android process has started. This theme is visible to the user
+51                 while the Flutter UI initializes. After that, this theme continues
+52                 to determine the Window background behind the Flutter UI.
+53            -->
+54            <meta-data
+54-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:21:13-24:17
+55                android:name="io.flutter.embedding.android.NormalTheme"
+55-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:22:15-70
+56                android:resource="@style/NormalTheme" />
+56-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:23:15-52
+57
+58            <intent-filter>
+58-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:25:13-28:29
+59                <action android:name="android.intent.action.MAIN" />
+59-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:26:17-68
+59-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:26:25-66
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:27:17-76
+61-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:27:27-74
+62            </intent-filter>
+63        </activity>
+64        <!--
+65             Don't delete the meta-data below.
+66             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+67        -->
+68        <meta-data
+68-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:32:9-34:33
+69            android:name="flutterEmbedding"
+69-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:33:13-44
+70            android:value="2" />
+70-->/Users/jaykadam/Desktop/m5azn_wms_admin_app/android/app/src/main/AndroidManifest.xml:34:13-30
+71
+72        <provider
+72-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:18:9-27:20
+73            android:name="com.crazecoder.openfile.FileProvider"
+73-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-64
+74            android:authorities="com.example.m5azn_app_wms.fileProvider.com.crazecoder.openfile"
+74-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-88
+75            android:exported="false"
+75-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-37
+76            android:grantUriPermissions="true" >
+76-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-47
+77            <meta-data
+77-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-26:53
+78                android:name="android.support.FILE_PROVIDER_PATHS"
+78-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:25:17-67
+79                android:resource="@xml/filepaths" />
+79-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:26:17-50
+80        </provider>
+81        <provider
+81-->[:image_picker_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+82            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+82-->[:image_picker_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-82
+83            android:authorities="com.example.m5azn_app_wms.flutter.image_provider"
+83-->[:image_picker_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-74
+84            android:exported="false"
+84-->[:image_picker_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+85            android:grantUriPermissions="true" >
+85-->[:image_picker_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/image_picker_android/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+86            <meta-data
+86-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-26:53
+87                android:name="android.support.FILE_PROVIDER_PATHS"
+87-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:25:17-67
+88                android:resource="@xml/flutter_image_picker_file_paths" />
+88-->[:open_filex] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/open_filex/intermediates/merged_manifest/release/AndroidManifest.xml:26:17-50
+89        </provider>
+90
+91        <activity
+91-->[:url_launcher_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-13:74
+92            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+92-->[:url_launcher_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-74
+93            android:exported="false"
+93-->[:url_launcher_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-37
+94            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+94-->[:url_launcher_android] /Users/jaykadam/Desktop/m5azn_wms_admin_app/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-71
+95
+96        <uses-library
+96-->[androidx.window:window:1.0.0-beta04] /Users/jaykadam/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+97            android:name="androidx.window.extensions"
+97-->[androidx.window:window:1.0.0-beta04] /Users/jaykadam/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+98            android:required="false" />
+98-->[androidx.window:window:1.0.0-beta04] /Users/jaykadam/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+99        <uses-library
+99-->[androidx.window:window:1.0.0-beta04] /Users/jaykadam/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+100            android:name="androidx.window.sidecar"
+100-->[androidx.window:window:1.0.0-beta04] /Users/jaykadam/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+101            android:required="false" />
+101-->[androidx.window:window:1.0.0-beta04] /Users/jaykadam/.gradle/caches/transforms-3/25cee5f028ac2a6b79fd6278ff5b59e2/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+102
+103        <provider
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+104            android:name="androidx.startup.InitializationProvider"
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:25:13-67
+105            android:authorities="com.example.m5azn_app_wms.androidx-startup"
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:26:13-68
+106            android:exported="false" >
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:27:13-37
+107            <meta-data
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+108                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+109                android:value="androidx.startup" />
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+110        </provider>
+111
+112        <receiver
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+113            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+114            android:directBootAware="false"
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+115            android:enabled="true"
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+116            android:exported="true"
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+117            android:permission="android.permission.DUMP" >
+117-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+118            <intent-filter>
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+119                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+120            </intent-filter>
+121            <intent-filter>
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+122                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+123            </intent-filter>
+124            <intent-filter>
+124-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+125                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+125-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+125-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+126            </intent-filter>
+127            <intent-filter>
+127-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+128                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+128-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+128-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/jaykadam/.gradle/caches/transforms-3/635b1770925726da461e843c0a3c6641/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+129            </intent-filter>
+130        </receiver>
+131
+132        <meta-data
+132-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:19:9-21:37
+133            android:name="com.google.android.play.billingclient.version"
+133-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:20:13-73
+134            android:value="6.0.1" />
+134-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:21:13-34
+135
+136        <activity
+136-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:23:9-27:75
+137            android:name="com.android.billingclient.api.ProxyBillingActivity"
+137-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:24:13-78
+138            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+138-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:25:13-96
+139            android:exported="false"
+139-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:26:13-37
+140            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+140-->[com.android.billingclient:billing:6.0.1] /Users/jaykadam/.gradle/caches/transforms-3/5fb324257591920d3841f362e9d963cd/transformed/jetified-billing-6.0.1/AndroidManifest.xml:27:13-72
+141
+142        <service
+142-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/a5f1ff8179a51cad08637ffc69855391/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:28:9-34:19
+143            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+143-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/a5f1ff8179a51cad08637ffc69855391/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:29:13-103
+144            android:exported="false" >
+144-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/a5f1ff8179a51cad08637ffc69855391/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:30:13-37
+145            <meta-data
+145-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/a5f1ff8179a51cad08637ffc69855391/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:31:13-33:39
+146                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+146-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/a5f1ff8179a51cad08637ffc69855391/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:32:17-94
+147                android:value="cct" />
+147-->[com.google.android.datatransport:transport-backend-cct:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/a5f1ff8179a51cad08637ffc69855391/transformed/jetified-transport-backend-cct-3.1.8/AndroidManifest.xml:33:17-36
+148        </service>
+149        <service
+149-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/6e5a1cbd6e3d2c42bcc7c2731873333e/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:26:9-30:19
+150            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+150-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/6e5a1cbd6e3d2c42bcc7c2731873333e/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:27:13-117
+151            android:exported="false"
+151-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/6e5a1cbd6e3d2c42bcc7c2731873333e/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:28:13-37
+152            android:permission="android.permission.BIND_JOB_SERVICE" >
+152-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/6e5a1cbd6e3d2c42bcc7c2731873333e/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:29:13-69
+153        </service>
+154
+155        <receiver
+155-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/6e5a1cbd6e3d2c42bcc7c2731873333e/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:32:9-34:40
+156            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+156-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/6e5a1cbd6e3d2c42bcc7c2731873333e/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:33:13-132
+157            android:exported="false" />
+157-->[com.google.android.datatransport:transport-runtime:3.1.8] /Users/jaykadam/.gradle/caches/transforms-3/6e5a1cbd6e3d2c42bcc7c2731873333e/transformed/jetified-transport-runtime-3.1.8/AndroidManifest.xml:34:13-37
+158    </application>
+159
+160</manifest>

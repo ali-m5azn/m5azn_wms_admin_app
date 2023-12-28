@@ -8,6 +8,7 @@ import 'package:m5azn_app_wms/views/home/dashboard/back_orders/screens/back_orde
 import 'package:m5azn_app_wms/views/home/dashboard/inbound/screens/inbound_list_page.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/inbound/screens/inbound_page.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/returns/screens/returns_page.dart';
+import 'package:m5azn_app_wms/views/home/dashboard/shipping_orders_page/screens/shipping_orders_list_page.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/shipping_orders_page/screens/shipping_orders_page.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/total_locations/screens/location_detail_view.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/total_locations/screens/total_locations_list_view.dart';
@@ -91,6 +92,9 @@ Route? generateRoute(RouteSettings settings) {
             ));
   } else if (settings.name ==
       '/${Languages.of(currentContext)?.shippingOrders}') {
+    return MaterialPageRoute(
+        builder: (context) => const ShippingOrdersListPage());
+  } else if (settings.name == '/shippingOrderDetail') {
     return MaterialPageRoute(builder: (context) => const ShippingOrdersPage());
   } else if (settings.name ==
       '/${Languages.of(currentContext)?.locationDetail}') {

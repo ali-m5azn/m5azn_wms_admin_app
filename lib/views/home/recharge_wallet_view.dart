@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:m5azn_app_wms/consts/colors.dart';
 import 'package:m5azn_app_wms/consts/localization/language/languages.dart';
 import 'package:m5azn_app_wms/views/base_views/custom_app_bar.dart';
 import 'package:m5azn_app_wms/views/widgets/button.dart';
@@ -51,7 +52,7 @@ class _RechargeWalletViewState extends State<RechargeWalletView>
         SizedBox(height: 5.h),
         Center(
           child: Buttons(
-            //  color: const Color(secondaryColor),
+            color: const Color(secondaryColor),
             radius: 1.5.w,
             txtFontSize: 2.0.sp,
             width: 30.w,
@@ -166,7 +167,7 @@ class _RechargeWalletViewState extends State<RechargeWalletView>
         SizedBox(height: 5.h),
         Center(
           child: Buttons(
-            //  color: const Color(secondaryColor),
+            color: const Color(secondaryColor),
             radius: 1.5.w,
             txtFontSize: 2.0.sp,
             width: 30.w,

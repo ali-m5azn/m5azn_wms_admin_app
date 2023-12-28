@@ -394,4 +394,7 @@ class AppLocalizationsEn extends Languages {
 
   @override
   String get threePLManage => '3pl Management';
+
+  @override
+  String get sellers => 'Sellers';
 }
