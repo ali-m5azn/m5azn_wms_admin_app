@@ -395,4 +395,7 @@ class AppLocalizationsAr extends Languages {
 
   @override
   String get threePLManage => 'إدارة 3pl';
+
+  @override
+  String get sellers => 'البائعين';
 }

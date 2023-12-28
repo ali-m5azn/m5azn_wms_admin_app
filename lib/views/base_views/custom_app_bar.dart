@@ -9,15 +9,16 @@ import 'package:m5azn_app_wms/views/home/recharge_wallet_view.dart';
 PreferredSizeWidget customAppBar(
     {required BuildContext context,
     bool isRechargeWalletScreen = false,
+    bool isDashboardScreen = false,
     bool isNotificationScreen = false}) {
   bool canPop = Navigator.of(context).canPop();
   return AppBar(
-    leading: canPop
+    leading: canPop && isDashboardScreen == false
         ? _buildBackButton()
         : _buildWalletIcon(
             isRechargeWalletScreen: isRechargeWalletScreen, context: context),
     actions: [
-      if (canPop)
+      if (canPop && isDashboardScreen == false)
         _buildWalletIcon(
             isRechargeWalletScreen: isRechargeWalletScreen, context: context),
       IconButton(

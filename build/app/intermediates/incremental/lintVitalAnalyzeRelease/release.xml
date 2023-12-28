@@ -1,7 +1,7 @@
 <variant
     name="release"
     package="com.example.m5azn_app_wms"
-    minSdkVersion="19"
+    minSdkVersion="21"
     targetSdkVersion="33"
     shrinking="true"
     mergedManifest="/Users/jaykadam/Desktop/m5azn_wms_admin_app/build/app/intermediates/merged_manifest/release/AndroidManifest.xml"

@@ -22,7 +22,7 @@ class _MainViewState extends State<MainView> {
     return WillPopScope(
       onWillPop: () async => false,
       child: Scaffold(
-        appBar: customAppBar(context: context),
+        appBar: customAppBar(context: context, isDashboardScreen: true),
         drawerEdgeDragWidth: 0,
         resizeToAvoidBottomInset: false,
         extendBody: true,
