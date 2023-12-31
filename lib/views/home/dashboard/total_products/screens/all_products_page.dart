@@ -1,22 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:m5azn_app_wms/consts/localization/language/languages.dart';
 import 'package:m5azn_app_wms/consts/navigation_service.dart';
 import 'package:m5azn_app_wms/views/base_views/custom_app_bar.dart';
+import 'package:m5azn_app_wms/views/home/dashboard/total_products/controller/total_products_controller.dart';
+import 'package:m5azn_app_wms/views/home/dashboard/total_products/model/product_item_model.dart';
 import 'package:m5azn_app_wms/views/widgets/excel_seller_widget.dart';
 import 'package:m5azn_app_wms/views/widgets/pdf_product_widget.dart';
 import 'package:m5azn_app_wms/views/widgets/screen_title.dart';
 
-import '../model/product_item_model.dart';
-
-class AllProductsPage extends StatefulWidget {
+class AllProductsPage extends ConsumerStatefulWidget {
   const AllProductsPage({super.key});
 
   @override
-  State<AllProductsPage> createState() => _AllProductsPageState();
+  ConsumerState<AllProductsPage> createState() => _AllProductsPageState();
 }
 
-class _AllProductsPageState extends State<AllProductsPage> {
+class _AllProductsPageState extends ConsumerState<AllProductsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,8 +34,8 @@ class _AllProductsPageState extends State<AllProductsPage> {
                 pdfClickCallback: () => generateProductPdf()),
             Flexible(
               child: ListView.builder(
-                itemCount: 10,
-                itemBuilder: (_, index) => _runSheetCard(context),
+                itemCount: productItemList.length,
+                itemBuilder: (_, index) => _runSheetCard(context, index),
               ),
             ),
           ],
@@ -43,7 +44,7 @@ class _AllProductsPageState extends State<AllProductsPage> {
     );
   }
 
-  Widget _runSheetCard(BuildContext context) {
+  Widget _runSheetCard(BuildContext context, int index) {
     return Container(
       margin: EdgeInsets.symmetric(vertical: 1.0.h),
       decoration: BoxDecoration(
@@ -55,15 +56,18 @@ class _AllProductsPageState extends State<AllProductsPage> {
       ),
       child: ListTile(
         onTap: () {
+          ref
+              .watch(totalProductController.notifier)
+              .selectTotalProduct(productItemList[index]);
           NavigationService.navigateTo(
               '/${Languages.of(context)?.productDetail}');
         },
         title: Text(
-          "name",
+          productItemList[index].name ?? '',
           style: TextStyle(fontSize: 3.sp),
         ),
-        subtitle: const Text(
-          "Sku1",
+        subtitle: Text(
+          productItemList[index].unit ?? '',
           style: TextStyle(fontWeight: FontWeight.w600),
         ),
         trailing: Wrap(
@@ -71,7 +75,7 @@ class _AllProductsPageState extends State<AllProductsPage> {
           spacing: 4.w,
           children: [
             Text(
-              "Pending",
+              productItemList[index].status ?? '',
               style: TextStyle(fontSize: 2.5.sp, fontWeight: FontWeight.w500),
             ),
             Container(

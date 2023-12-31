@@ -4,6 +4,7 @@ class SaleItemModel {
   String? warehouse;
   String? createdBy;
   String? status;
+  String? createdAt;
   String? total;
   String? paid;
   String? due;
@@ -15,6 +16,7 @@ class SaleItemModel {
     this.client,
     this.warehouse,
     this.createdBy,
+    this.createdAt,
     this.status,
     this.total,
     this.paid,
@@ -70,6 +72,7 @@ List<SaleItemModel> saleItemList = [
       ref: '1927685087',
       createdBy: 'Demo User',
       due: '40.00',
+      createdAt: '2023-11-04',
       paid: '0.0',
       paymentStatus: 'unpaid',
       shippingStatus: 'unpaid',
@@ -82,6 +85,7 @@ List<SaleItemModel> saleItemList = [
       createdBy: 'Demo User',
       due: '40.00',
       paid: '0.0',
+      createdAt: '2023-11-04',
       paymentStatus: 'unpaid',
       shippingStatus: 'unpaid',
       status: 'completed',

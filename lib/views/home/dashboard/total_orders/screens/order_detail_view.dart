@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:m5azn_app_wms/consts/localization/language/languages.dart';
 import 'package:m5azn_app_wms/views/base_views/custom_app_bar.dart';
+import 'package:m5azn_app_wms/views/home/dashboard/total_orders/controller/total_order_controller.dart';
+import 'package:m5azn_app_wms/views/home/dashboard/total_orders/model/sale_item_model.dart';
 import 'package:m5azn_app_wms/views/widgets/screen_title.dart';
 
-class OrderDetailView extends StatelessWidget {
+class OrderDetailView extends ConsumerWidget {
   const OrderDetailView({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    SaleItemModel totalSellerModel =
+        ref.watch(totalOrderController).saleItemModel;
     return Scaffold(
       appBar: customAppBar(context: context),
       body: Padding(
@@ -21,24 +26,32 @@ class OrderDetailView extends StatelessWidget {
               showTrailingOptions: false,
             ),
             _orderDetailRow(
-                title: Languages.of(context)?.date ?? '', data: "2023-11-04"),
+                title: Languages.of(context)?.date ?? '',
+                data: totalSellerModel.createdAt ?? ''),
             _orderDetailRow(
-                title: Languages.of(context)?.reference ?? '', data: "SL_118"),
+                title: Languages.of(context)?.reference ?? '',
+                data: totalSellerModel.ref ?? ''),
             _orderDetailRow(
-                title: Languages.of(context)?.addedBy ?? '', data: "Demo User"),
+                title: Languages.of(context)?.addedBy ?? '',
+                data: totalSellerModel.createdBy ?? ''),
             _orderDetailRow(
-                title: Languages.of(context)?.warehouse ?? '', data: "15.00"),
+                title: Languages.of(context)?.warehouse ?? '',
+                data: totalSellerModel.warehouse ?? ''),
             _orderDetailRow(
-                title: Languages.of(context)?.status ?? '', data: "Pending"),
+                title: Languages.of(context)?.status ?? '',
+                data: totalSellerModel.status ?? ''),
             _orderDetailRow(
-                title: Languages.of(context)?.grandTotal ?? '', data: "15.00"),
+                title: Languages.of(context)?.grandTotal ?? '',
+                data: totalSellerModel.total ?? ''),
             _orderDetailRow(
-                title: Languages.of(context)?.paid ?? '', data: "0.00"),
+                title: Languages.of(context)?.paid ?? '',
+                data: totalSellerModel.shippingStatus ?? ''),
             _orderDetailRow(
-                title: Languages.of(context)?.due ?? '', data: "15.00"),
+                title: Languages.of(context)?.due ?? '',
+                data: totalSellerModel.due ?? ''),
             _orderDetailRow(
                 title: Languages.of(context)?.paymentStatus ?? '',
-                data: "Pending"),
+                data: totalSellerModel.paymentStatus ?? ''),
           ],
         ),
       ),

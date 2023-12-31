@@ -4,9 +4,21 @@ class TotalSellerModel {
   final String? username;
   final String? email;
   final String? phone;
+  final String? crName;
+  final String? accountManager;
+  final String? cr;
+  final String? vat;
 
   TotalSellerModel(
-      {this.shopName, this.lastName, this.username, this.email, this.phone});
+      {this.crName,
+      this.accountManager,
+      this.cr,
+      this.shopName,
+      this.lastName,
+      this.username,
+      this.email,
+      this.phone,
+      this.vat});
 
   String? getField(String labelItem) {
     switch (labelItem) {
@@ -40,11 +52,19 @@ List<TotalSellerModel> totalSellerList = [
       phone: '0823443433',
       email: 'syrox@gmail.com',
       lastName: 'syros',
-      username: 'zyros'),
+      username: 'zyros',
+      accountManager: 'ABC',
+      cr: '329382938232',
+      crName: 'zyros',
+      vat: '3256423323232'),
   TotalSellerModel(
       shopName: 'zyros',
       phone: '0823443433',
       email: 'syrox@gmail.com',
       lastName: 'syros',
-      username: 'zyros'),
+      username: 'zyros',
+      accountManager: 'ABC',
+      cr: '329382938232',
+      crName: 'zyros',
+      vat: '3256423323232'),
 ];

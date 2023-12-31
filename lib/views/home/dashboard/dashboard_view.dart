@@ -156,9 +156,9 @@ class _DashboardViewState extends State<DashboardView> {
                             _selectedWarehouse = '';
                           });
                         },
-                        child: Icon(Icons.clear),
+                        child: const Icon(Icons.clear),
                       ),
-                      Icon(Icons.arrow_drop_down)
+                      const Icon(Icons.arrow_drop_down)
                     ],
                   ),
                   onChanged: (String? newValue) {

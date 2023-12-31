@@ -606,10 +606,10 @@ library {
   maven_library {
     groupId: "io.flutter"
     artifactId: "flutter_embedding_release"
-    version: "1.0.0-b20183e04096094bcc37d9cde2a4b96f5cc684cf"
+    version: "1.0.0-74d16627b940bb15e50891f82cad6c3e3465bd6d"
   }
   digests {
-    sha256: "\226m~>^;\371\332\241\227\227\260\2022\350\001\362-\360\245\r\375\373\375\273+\270Y\227<E^"
+    sha256: "x\214\342\340 \257T\020\020\371\f\034\177\314\b\200\255Yc\312cE\215={\366\303\006\340\203d\326"
   }
   repo_index {
     value: 2
@@ -774,10 +774,10 @@ library {
   maven_library {
     groupId: "io.flutter"
     artifactId: "armeabi_v7a_release"
-    version: "1.0.0-b20183e04096094bcc37d9cde2a4b96f5cc684cf"
+    version: "1.0.0-74d16627b940bb15e50891f82cad6c3e3465bd6d"
   }
   digests {
-    sha256: "\006\246\364]\017\262\244\347~\372#\000\032U0\245\264\255rU\035\332\357\232\032\241n\037yg\214\237"
+    sha256: "\005\254\371\316?\316P\256\227\352\215\376\233\312\370\006Q}_\317\"\031K\2476\323v\002\017c\n\265"
   }
   repo_index {
     value: 2
@@ -787,10 +787,10 @@ library {
   maven_library {
     groupId: "io.flutter"
     artifactId: "arm64_v8a_release"
-    version: "1.0.0-b20183e04096094bcc37d9cde2a4b96f5cc684cf"
+    version: "1.0.0-74d16627b940bb15e50891f82cad6c3e3465bd6d"
   }
   digests {
-    sha256: "<{\214`HCk\024\240M\225\245\226\306\254\246jC,\205\036\214\260\001_\374\273\237K*\374\257"
+    sha256: "\200g\200\352D\301\357V\226Cg`\374\340\275\026\253m\301B\351(AJ;4\3520/Xl\236"
   }
   repo_index {
     value: 2
@@ -800,10 +800,10 @@ library {
   maven_library {
     groupId: "io.flutter"
     artifactId: "x86_64_release"
-    version: "1.0.0-b20183e04096094bcc37d9cde2a4b96f5cc684cf"
+    version: "1.0.0-74d16627b940bb15e50891f82cad6c3e3465bd6d"
   }
   digests {
-    sha256: "\362\003\342\270\305\336\b \356\274\370\371\rE(\'V\255`\215\365\2479\337\236\353\003\307\316u\305\274"
+    sha256: "\026\345\377!y\003\357\003?\211\355H\264\037\256\240\344\025\221\006~\242\315\001\207l\272\3754\'(l"
   }
   repo_index {
     value: 2
@@ -811,7 +811,7 @@ library {
 }
 library {
   digests {
-    sha256: "Pn\036\253\206V\226\342_u\356\264\250\254\360\354ej\bJ\263\025\245\'\356Y\247U)7\317q"
+    sha256: "\253\367\241[\a\216\327\252\240\026\357\356\344\377\243\002\004\327ev7\355C\006\376\357\364\032g\016\353\345"
   }
 }
 library_dependencies {

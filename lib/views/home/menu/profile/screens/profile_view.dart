@@ -87,7 +87,7 @@ class _ProfileViewState extends ConsumerState<ProfileView> {
                   child: Center(
                     child: CircleAvatar(
                       radius: 10.h,
-                      backgroundColor: Color(secondaryColor),
+                      backgroundColor: const Color(secondaryColor),
                       backgroundImage: profileController.image != null
                           ? FileImage(profileController.image!)
                           : null,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:m5azn_app_wms/views/base_views/custom_app_bar.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/returns/model/customer_return_model.dart';
@@ -6,16 +7,16 @@ import 'package:m5azn_app_wms/views/widgets/excel_seller_widget.dart';
 import 'package:m5azn_app_wms/views/widgets/pdf_customer_returns_widget.dart';
 import 'package:m5azn_app_wms/views/widgets/screen_title.dart';
 
-class ReturnsPage extends StatefulWidget {
+class ReturnsPage extends ConsumerStatefulWidget {
   final String title;
 
   const ReturnsPage({super.key, required this.title});
 
   @override
-  State<ReturnsPage> createState() => _ReturnsPageState();
+  ConsumerState<ReturnsPage> createState() => _ReturnsPageState();
 }
 
-class _ReturnsPageState extends State<ReturnsPage> {
+class _ReturnsPageState extends ConsumerState<ReturnsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,8 +32,8 @@ class _ReturnsPageState extends State<ReturnsPage> {
                     customerReturnList, 'customer_return_invoice.xlsx')),
             Flexible(
               child: ListView.builder(
-                itemCount: 10,
-                itemBuilder: (_, index) => _runSheetCard(context),
+                itemCount: customerReturnList.length,
+                itemBuilder: (_, index) => _runSheetCard(context, index),
               ),
             ),
           ],
@@ -41,7 +42,7 @@ class _ReturnsPageState extends State<ReturnsPage> {
     );
   }
 
-  Widget _runSheetCard(BuildContext context) {
+  Widget _runSheetCard(BuildContext context, int index) {
     return Container(
       margin: EdgeInsets.symmetric(vertical: 1.0.h),
       decoration: BoxDecoration(
@@ -53,11 +54,11 @@ class _ReturnsPageState extends State<ReturnsPage> {
       ),
       child: ListTile(
         title: Text(
-          "name",
+          customerReturnList[index].client ?? '',
           style: TextStyle(fontSize: 3.sp),
         ),
-        subtitle: const Text(
-          "Sku1",
+        subtitle: Text(
+          customerReturnList[index].sale_ref ?? '',
           style: TextStyle(fontWeight: FontWeight.w600),
         ),
         trailing: Wrap(
@@ -65,7 +66,7 @@ class _ReturnsPageState extends State<ReturnsPage> {
           spacing: 2.w,
           children: [
             Text(
-              "Pending",
+              customerReturnList[index].status ?? '',
               style: TextStyle(fontSize: 2.5.sp, fontWeight: FontWeight.w500),
             ),
             InkWell(

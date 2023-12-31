@@ -1,21 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:m5azn_app_wms/consts/localization/language/languages.dart';
 import 'package:m5azn_app_wms/consts/navigation_service.dart';
 import 'package:m5azn_app_wms/views/base_views/custom_app_bar.dart';
+import 'package:m5azn_app_wms/views/home/dashboard/total_sellers/controller/total_sellers_controller.dart';
 import 'package:m5azn_app_wms/views/home/dashboard/total_sellers/model/total_seller_model.dart';
 import 'package:m5azn_app_wms/views/widgets/excel_seller_widget.dart';
 import 'package:m5azn_app_wms/views/widgets/pdf_seller_widget.dart';
 import 'package:m5azn_app_wms/views/widgets/screen_title.dart';
 
-class TotalSellersListPage extends StatefulWidget {
+class TotalSellersListPage extends ConsumerStatefulWidget {
   const TotalSellersListPage({super.key});
 
   @override
-  State<TotalSellersListPage> createState() => _TotalSellersListPageState();
+  ConsumerState<TotalSellersListPage> createState() =>
+      _TotalSellersListPageState();
 }
 
-class _TotalSellersListPageState extends State<TotalSellersListPage> {
+class _TotalSellersListPageState extends ConsumerState<TotalSellersListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,8 +36,8 @@ class _TotalSellersListPageState extends State<TotalSellersListPage> {
             ),
             Expanded(
               child: ListView.builder(
-                itemCount: 10,
-                itemBuilder: (_, index) => _locationCard(context),
+                itemCount: totalSellerList.length,
+                itemBuilder: (_, index) => _locationCard(context, index),
               ),
             ),
           ],
@@ -43,7 +46,7 @@ class _TotalSellersListPageState extends State<TotalSellersListPage> {
     );
   }
 
-  Widget _locationCard(BuildContext context) {
+  Widget _locationCard(BuildContext context, int index) {
     return Container(
       margin: EdgeInsets.symmetric(vertical: 1.0.h),
       decoration: BoxDecoration(
@@ -55,39 +58,32 @@ class _TotalSellersListPageState extends State<TotalSellersListPage> {
       ),
       child: ListTile(
         onTap: () {
+          ref
+              .watch(totalSellersController.notifier)
+              .selectTotalSeller(totalSellerList[index]);
           NavigationService.navigateTo('/sellerDetails');
         },
         title: Text(
-          "zyros",
+          totalSellerList[index].shopName ?? '',
           style: TextStyle(fontSize: 3.sp, fontWeight: FontWeight.bold),
         ),
-        subtitle: const Text(
-          "1012165485",
+        subtitle: Text(
+          totalSellerList[index].vat ?? '',
           style: TextStyle(fontWeight: FontWeight.w600),
         ),
-        trailing: Wrap(
-          crossAxisAlignment: WrapCrossAlignment.center,
-          spacing: 4.w,
-          children: [
-            Text(
-              "pending",
-              style: TextStyle(fontSize: 2.5.sp, fontWeight: FontWeight.w500),
-            ),
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 1.8.w),
-              width: 6.w,
-              height: 6.h,
-              decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.black,
-              ),
-              child: Icon(
-                Icons.chevron_right,
-                color: Colors.white,
-                size: 4.0.sp,
-              ),
-            ),
-          ],
+        trailing: Container(
+          margin: EdgeInsets.symmetric(horizontal: 1.8.w),
+          width: 6.w,
+          height: 6.h,
+          decoration: const BoxDecoration(
+            shape: BoxShape.circle,
+            color: Colors.black,
+          ),
+          child: Icon(
+            Icons.chevron_right,
+            color: Colors.white,
+            size: 4.0.sp,
+          ),
         ),
       ),
     );

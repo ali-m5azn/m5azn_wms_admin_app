@@ -5,12 +5,14 @@ class ShippingOrderModel {
   String? customer;
   String? warehouse;
   String? status;
+  String? action;
 
   ShippingOrderModel(
       {this.date,
       this.shipment_ref,
       this.sale_ref,
       this.customer,
+      this.action,
       this.warehouse,
       this.status});
 
@@ -49,6 +51,7 @@ List<ShippingOrderModel> shippingOrderList = [
       shipment_ref: 'SM_1111',
       sale_ref: '8232789443',
       customer: '',
+      action: 'Done',
       warehouse: 'Riyadh',
       status: 'ordered')
 ];

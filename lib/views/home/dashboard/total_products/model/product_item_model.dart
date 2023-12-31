@@ -6,7 +6,9 @@ class ProductItemModel {
   String? cost;
   String? price;
   String? unit;
+  String? brand;
   String? quantity;
+  String? status;
 
   ProductItemModel(
       {this.type,
@@ -16,6 +18,8 @@ class ProductItemModel {
       this.cost,
       this.price,
       this.unit,
+      this.brand,
+      this.status,
       this.quantity});
 
   String? getField(String fieldName) {
@@ -62,6 +66,8 @@ List<ProductItemModel> productItemList = [
       cost: '40',
       quantity: '2',
       type: 'Cate',
+      status: 'Unpaid',
+      brand: 'BMW',
       unit: '10'),
   ProductItemModel(
       price: '40.0',
@@ -71,5 +77,7 @@ List<ProductItemModel> productItemList = [
       cost: '40',
       quantity: '2',
       type: 'Cate',
+      status: 'Unpaid',
+      brand: 'BMW',
       unit: '10'),
 ];
